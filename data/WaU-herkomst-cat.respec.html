@@ -1,0 +1,2486 @@
+
+<!DOCTYPE HTML><section id="cat" class="normative">
+   <h2>Gegevensdefinitie</h2>
+   <!--MIMCM-Herkomst-Stereotyped-1.0-0-20230207-20230223-213013 imvertor Nightly-build.3-->
+   <section id="">
+      <h3>Objecttypen   </h3>
+      <a class="anchor" id="graph_EAID_226F5A5A_D665_4a65_870C_A429AB791EEB"></a><a class="anchor" id="global_class_Herkomst_GeorkestreerdGegeven"></a><section id="global_class_Herkomst_GeorkestreerdGegeven">
+         <h4>   Georkestreerd­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Georkestreerd­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Een gegeven dat is ontstaan/verkregen middels het orkestreren van brongegevens.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>
+                     UC1 Adres
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Ja</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_GeorkestreerdGegeven_kenmerk">kenmerk</a>
+                     </td>
+                  <td>
+                     
+                     <p>De naam van het attribuut of de relatie van het Orkestratiegegeven.</p>
+                     </td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Gegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdGegeven_brongegeven">is­Afgeleid­Van: brongegeven</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td>
+                     
+                     <p>Gerelateerd Bronogegeven, waar Georkestreerd­Gegeven van is afgeleid.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Gegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdGegeven_onderwerp">heeft­Als­Onderwerp: onderwerp</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_AnyFeature">Any­Feature</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdComplexGegeven">Georkestreerd­Complex­Gegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdComplexGegeven_waarde">bestaat­Uit: waarde</a>
+                     
+                     Georkestreerd­Gegeven
+                     [ 2 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_DE2CBDE5_A7B2_4094_B2D9_64D8EB8F7944"></a><a class="anchor" id="global_class_Herkomst_GeorkesteerdCharacterStringGegeven"></a><section id="global_class_Herkomst_GeorkesteerdCharacterStringGegeven">
+         <h4>   Georkesteerd­Character­String­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Georkesteerd­Character­String­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Georkestreerd­Gegeven met als waarde een Character­String.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_GeorkesteerdCharacterStringGegeven_waarde">waarde</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Georkesteerd­Character­String­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven dat is ontstaan/verkregen middels het orkestreren van brongegevens.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_CFEAC94B_458F_4490_8F1D_29483725C8DE"></a><a class="anchor" id="global_class_Herkomst_GeorkestreerdIntegerGegeven"></a><section id="global_class_Herkomst_GeorkestreerdIntegerGegeven">
+         <h4>   Georkestreerd­Integer­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Georkestreerd­Integer­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Georkestreerd­Gegeven met als waarde een Integer.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_GeorkestreerdIntegerGegeven_waarde">waarde</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     Integer
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Integer­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven dat is ontstaan/verkregen middels het orkestreren van brongegevens.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_72DED093_B5E7_473d_AB2D_91AEEF5A3CC8"></a><a class="anchor" id="global_class_Herkomst_GeorkestreerdBooleanGegeven"></a><section id="global_class_Herkomst_GeorkestreerdBooleanGegeven">
+         <h4>   Georkestreerd­Boolean­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Georkestreerd­Boolean­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Georkestreerd­Gegeven met als waarde een Boolean.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_GeorkestreerdBooleanGegeven_waarde">waarde</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     Boolean
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Boolean­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven dat is ontstaan/verkregen middels het orkestreren van brongegevens.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_4F79A226_4094_4dfa_8830_4ADF89162C9A"></a><a class="anchor" id="global_class_Herkomst_Brongegeven"></a><section id="global_class_Herkomst_Brongegeven">
+         <h4>   Brongegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Brongegeven</td>
+               </tr>
+               <tr>
+                  <th>Begrip</th>
+                  <td>
+                     Definitie van Brongegeven
+                     </td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Een gegeven van een Bronobject.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>
+                     UC1 Adres
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Ja</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_Brongegeven_kenmerk">kenmerk</a>
+                     </td>
+                  <td>
+                     
+                     <p>De naam van het attribuut of de relatie van het Brongegeven.</p>
+                     </td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_Brongegeven_kenmerkpad">kenmerkpad</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Brongegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_Brongegeven_bronregistratie">heeft­Als­Herkomst: bronregistratie</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_Bronregistratie">Bronregistratie</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td>
+                     
+                     <p>Bronregistratie, waar brongegeven uit herkomt.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <td>
+                     Brongegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_Brongegeven_onderwerp">heeft­Als­Onderwerp: onderwerp</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_Bronobject">Bronobject</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td>
+                     
+                     <p>Gerelateerd Bronobject, dat het Brongegeven als onderwerp heeft.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdGegeven_brongegeven">is­Afgeleid­Van: brongegeven</a>
+                     
+                     Brongegeven
+                     [ 0 .. * ]
+                     </td>
+                  <td>
+                     
+                     <p>Gerelateerd Bronogegeven, waar Georkestreerd­Gegeven van is afgeleid.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_BronComplexGegeven">Bron­Complex­Gegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_BronComplexGegeven_gegeven">bestaat­Uit: gegeven</a>
+                     
+                     Brongegeven
+                     [ 2 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_C1DB22C2_468B_4fd2_A86B_E478459DA0A8"></a><a class="anchor" id="global_class_Herkomst_BronCharacterStringGegeven"></a><section id="global_class_Herkomst_BronCharacterStringGegeven">
+         <h4>   Bron­Character­String­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Bron­Character­String­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Brongegeven met als waarde een Character­String.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_BronCharacterStringGegeven_waarde">waarde</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Bron­Character­String­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven van een Bronobject.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_8CF75846_271D_442b_8763_801B1DC7C207"></a><a class="anchor" id="global_class_Herkomst_BronIntegerGegeven"></a><section id="global_class_Herkomst_BronIntegerGegeven">
+         <h4>   Bron­Integer­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Bron­Integer­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Brongegeven met als waarde een Integer.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_BronIntegerGegeven_waarde">waarde</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     Integer
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Bron­Integer­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven van een Bronobject.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_296449E5_0C7C_4382_995B_2B19C4363191"></a><a class="anchor" id="global_class_Herkomst_BronRelatieGegeven"></a><section id="global_class_Herkomst_BronRelatieGegeven">
+         <h4>   Bron­Relatie­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Bron­Relatie­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Brongegeven met als waarde een relatie naar een Bronobject.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Bron­Relatie­Gegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_BronRelatieGegeven_waarde">heeft­Als­Waarde: waarde</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_Bronobject">Bronobject</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td>
+                     
+                     <p>Gerelateerd Bronobject, </p>
+                     </td>
+               </tr>
+               <tr>
+                  <td>
+                     Bron­Relatie­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven van een Bronobject.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_35C9719A_8890_4598_8B82_9D304CDC431C"></a><a class="anchor" id="global_class_Herkomst_Bronobject"></a><section id="global_class_Herkomst_Bronobject">
+         <h4>   Bronobject</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Bronobject</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Een object in een Bronregistratie.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>
+                     UC1 Adres
+                     </td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td>
+                     Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
+                     van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
+                     voorhanden zijn.
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_Bronobject_type">type</a>
+                     </td>
+                  <td>
+                     
+                     <p>Het type Bronobject in de Bronregistratie.</p>
+                     </td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_Bronobject_identificatie">identificatie</a>
+                     </td>
+                  <td>
+                     
+                     <p>De identificatie van het Bronobject in de Bronregistratie.</p>
+                     </td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_Brongegeven_onderwerp">heeft­Als­Onderwerp: onderwerp</a>
+                     
+                     Bronobject
+                     [ 1 ]
+                     </td>
+                  <td>
+                     
+                     <p>Gerelateerd Bronobject, dat het Brongegeven als onderwerp heeft.</p>
+                     </td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_BronRelatieGegeven">Bron­Relatie­Gegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_BronRelatieGegeven_waarde">heeft­Als­Waarde: waarde</a>
+                     
+                     Bronobject
+                     [ 1 ]
+                     </td>
+                  <td>
+                     
+                     <p>Gerelateerd Bronobject, </p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_667EB319_80BC_4ef8_961D_F33B52458C1F"></a><a class="anchor" id="global_class_Herkomst_Bronregistratie"></a><section id="global_class_Herkomst_Bronregistratie">
+         <h4>   Bronregistratie</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Bronregistratie</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     
+                     <p>Een registratie, welke als bron heeft gediend voor de orkestratie van brongegevens.</p>
+                     
+                     </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td>
+                     UC1 Adres
+                     </td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_Bronregistratie_naam">naam</a>
+                     </td>
+                  <td>
+                     
+                     <p>De naam van de Bronregistratie.</p>
+                     </td>
+                  <td>
+                     <a class="link" href="#global_class_Herkomst_Registratie">Registratie</a>
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_Brongegeven_bronregistratie">heeft­Als­Herkomst: bronregistratie</a>
+                     
+                     Bronregistratie
+                     [ 1 ]
+                     </td>
+                  <td>
+                     
+                     <p>Bronregistratie, waar brongegeven uit herkomt.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_5155118D_99EC_4310_91CC_2418287475DE"></a><a class="anchor" id="global_class_Herkomst_GeorkestreerdComplexGegeven"></a><section id="global_class_Herkomst_GeorkestreerdComplexGegeven">
+         <h4>   Georkestreerd­Complex­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Georkestreerd­Complex­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Complex­Gegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdComplexGegeven_waarde">bestaat­Uit: waarde</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     [ 2 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Complex­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven dat is ontstaan/verkregen middels het orkestreren van brongegevens.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_71D9ABC3_6BCA_4655_9565_FB0883063432"></a><a class="anchor" id="global_class_Herkomst_GeorkestreerdSimpelGegeven"></a><section id="global_class_Herkomst_GeorkestreerdSimpelGegeven">
+         <h4>   Georkestreerd­Simpel­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Georkestreerd­Simpel­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_GeorkestreerdSimpelGegeven_waarde">waarde</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Simpel­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven dat is ontstaan/verkregen middels het orkestreren van brongegevens.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_80F6071C_B54F_4162_A730_5D7D4C349BEA"></a><a class="anchor" id="global_class_Herkomst_BronComplexGegeven"></a><section id="global_class_Herkomst_BronComplexGegeven">
+         <h4>   Bron­Complex­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Bron­Complex­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Bron­Complex­Gegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_BronComplexGegeven_gegeven">bestaat­Uit: gegeven</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     [ 2 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Bron­Complex­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven van een Bronobject.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_9BA9BCDA_31FF_45bc_BA62_2BDC1ABEE203"></a><a class="anchor" id="global_class_Herkomst_GeorkestreerdRelatieGegeven"></a><section id="global_class_Herkomst_GeorkestreerdRelatieGegeven">
+         <h4>   Georkestreerd­Relatie­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Georkestreerd­Relatie­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Relatie­Gegeven
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdRelatieGegeven_waarde">heeft­Als­Doel: waarde</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_AnyFeature">Any­Feature</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Georkestreerd­Relatie­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven dat is ontstaan/verkregen middels het orkestreren van brongegevens.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_EC6AE1DF_36E5_469f_9B24_9FEE21C9E82F"></a><a class="anchor" id="global_class_Herkomst_BronSimpelGegeven"></a><section id="global_class_Herkomst_BronSimpelGegeven">
+         <h4>   Bron­Simpel­Gegeven</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Bron­Simpel­Gegeven</td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_BronSimpelGegeven_waarde">waarde</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>1</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Bron­Simpel­Gegeven
+                     is specialisatie van
+                     
+                     <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                     
+                     </td>
+                  <td>
+                     
+                     <p>Een gegeven van een Bronobject.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_5B83D850_511B_483e_811D_7C7840ED486D"></a><a class="anchor" id="global_class_Herkomst_Registratiegegevens"></a><section id="global_class_Herkomst_Registratiegegevens">
+         <h4>   Registratiegegevens</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Registratiegegevens</td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_AnyFeature">Any­Feature</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_AnyFeature_registratiegegevens">is­Geregistreerd­Met: registratiegegevens</a>
+                     
+                     Registratiegegevens
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      <a class="anchor" id="graph_EAID_B98DC4B9_8564_41bd_86AC_B65C7F037F5B"></a><a class="anchor" id="global_class_Herkomst_AnyFeature"></a><section id="global_class_Herkomst_AnyFeature">
+         <h4>   Any­Feature</h4>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Any­Feature</td>
+               </tr>
+               <tr>
+                  <th>Indicatie abstract object</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <h5>Overzicht attributen  </h5>
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <colgroup style="width: 10%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Attribuutnaam</th>
+                  <th>Definitie</th>
+                  <th>Formaat</th>
+                  <th>Card</th>
+               </tr>
+               <tr>
+                  <td>
+                     <a class="link" href="#detail_attribute_Herkomst_AnyFeature_anyAttribute">any­Attribute</a>
+                     </td>
+                  <td></td>
+                  <td>
+                     CHARACTERSTRING
+                     </td>
+                  <td>0 .. *</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         
+         <h5>Overzicht relaties  </h5>
+         
+         
+         <table style="width: 100%;">
+            <colgroup style="width: 50%;"></colgroup>
+            <colgroup style="width: 50%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Rol naam met kardinaliteiten</th>
+                  <th>Definitie</th>
+               </tr>
+               <tr>
+                  <td>
+                     Any­Feature
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_AnyFeature_anyRole">any­Role: any­Role</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_AnyFeature">Any­Feature</a>
+                     
+                     [ 0 .. * ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     Any­Feature
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_AnyFeature_registratiegegevens">is­Geregistreerd­Met: registratiegegevens</a>
+                     
+                     
+                     <a class="link" href="#global_class_Herkomst_Registratiegegevens">Registratiegegevens</a>
+                     
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdGegeven_onderwerp">heeft­Als­Onderwerp: onderwerp</a>
+                     
+                     Any­Feature
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>
+                     
+                     <a class="link" href="#global_class_Herkomst_GeorkestreerdRelatieGegeven">Georkestreerd­Relatie­Gegeven</a>
+                     
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Herkomst_GeorkestreerdRelatieGegeven_waarde">heeft­Als­Doel: waarde</a>
+                     
+                     Any­Feature
+                     [ 1 ]
+                     </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         </section>
+      </section>
+   <section id="">
+      <h3>Enumeraties   </h3>
+      
+      <table style="width: 100%;">
+         <colgroup style="width: 30%;"></colgroup>
+         <colgroup style="width: 70%;"></colgroup>
+         <tbody>
+            <tr>
+               <th><a class="anchor" id="graph_EAID_8747FB16_7C20_4589_951F_883BC49F9DF8"></a><a class="anchor" id="global_class_Herkomst_Registratie"></a><a class="link" href="#detail_class_Herkomst_Registratie">Registratie</a></th>
+               <td>
+                  
+                  <p>Waardenlijst voor Bronregistratie.</p>
+                  </td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+   <section id="">
+      <h3>Attribuut- en relatiesoort details  </h3>
+      
+      <section id="">
+         <h4>Objecttype details  </h4>
+         <a class="anchor" id="detail_class_Herkomst_GeorkestreerdGegeven"></a><section id="detail_class_Herkomst_GeorkestreerdGegeven">
+            <h5>   Georkestreerd­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_GeorkestreerdGegeven_kenmerk"></a><section id="detail_attribute_Herkomst_GeorkestreerdGegeven_kenmerk">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a> kenmerk</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>kenmerk</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>De naam van het attribuut of de relatie van het Orkestratiegegeven.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>
+                           UC1 Adres
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_association_Herkomst_GeorkestreerdGegeven_brongegeven"></a><section id="detail_association_Herkomst_GeorkestreerdGegeven_brongegeven">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a> is­Afgeleid­Van</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>is­Afgeleid­Van</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>Gerelateerd Bronogegeven, waar Georkestreerd­Gegeven van is afgeleid.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_association_Herkomst_GeorkestreerdGegeven_onderwerp"></a><section id="detail_association_Herkomst_GeorkestreerdGegeven_onderwerp">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a> heeft­Als­Onderwerp</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>heeft­Als­Onderwerp</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_AnyFeature">Any­Feature</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_GeorkesteerdCharacterStringGegeven"></a><section id="detail_class_Herkomst_GeorkesteerdCharacterStringGegeven">
+            <h5>   Georkesteerd­Character­String­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_GeorkesteerdCharacterStringGegeven_waarde"></a><section id="detail_attribute_Herkomst_GeorkesteerdCharacterStringGegeven_waarde">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_GeorkesteerdCharacterStringGegeven">Georkesteerd­Character­String­Gegeven</a> waarde</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_GeorkestreerdIntegerGegeven"></a><section id="detail_class_Herkomst_GeorkestreerdIntegerGegeven">
+            <h5>   Georkestreerd­Integer­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_GeorkestreerdIntegerGegeven_waarde"></a><section id="detail_attribute_Herkomst_GeorkestreerdIntegerGegeven_waarde">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_GeorkestreerdIntegerGegeven">Georkestreerd­Integer­Gegeven</a> waarde</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>Integer</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_GeorkestreerdBooleanGegeven"></a><section id="detail_class_Herkomst_GeorkestreerdBooleanGegeven">
+            <h5>   Georkestreerd­Boolean­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_GeorkestreerdBooleanGegeven_waarde"></a><section id="detail_attribute_Herkomst_GeorkestreerdBooleanGegeven_waarde">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_GeorkestreerdBooleanGegeven">Georkestreerd­Boolean­Gegeven</a> waarde</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>Boolean</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_Brongegeven"></a><section id="detail_class_Herkomst_Brongegeven">
+            <h5>   Brongegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_Brongegeven_kenmerk"></a><section id="detail_attribute_Herkomst_Brongegeven_kenmerk">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_Brongegeven">Brongegeven</a> kenmerk</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>kenmerk</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>De naam van het attribuut of de relatie van het Brongegeven.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>
+                           UC1 Adres
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_attribute_Herkomst_Brongegeven_kenmerkpad"></a><section id="detail_attribute_Herkomst_Brongegeven_kenmerkpad">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_Brongegeven">Brongegeven</a> kenmerkpad</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>kenmerkpad</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_association_Herkomst_Brongegeven_bronregistratie"></a><section id="detail_association_Herkomst_Brongegeven_bronregistratie">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_Brongegeven">Brongegeven</a> heeft­Als­Herkomst</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>heeft­Als­Herkomst</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>Bronregistratie, waar brongegeven uit herkomt.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_Bronregistratie">Bronregistratie</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_association_Herkomst_Brongegeven_onderwerp"></a><section id="detail_association_Herkomst_Brongegeven_onderwerp">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_Brongegeven">Brongegeven</a> heeft­Als­Onderwerp</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>heeft­Als­Onderwerp</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>Gerelateerd Bronobject, dat het Brongegeven als onderwerp heeft.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_Bronobject">Bronobject</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_BronCharacterStringGegeven"></a><section id="detail_class_Herkomst_BronCharacterStringGegeven">
+            <h5>   Bron­Character­String­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_BronCharacterStringGegeven_waarde"></a><section id="detail_attribute_Herkomst_BronCharacterStringGegeven_waarde">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_BronCharacterStringGegeven">Bron­Character­String­Gegeven</a> waarde</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_BronIntegerGegeven"></a><section id="detail_class_Herkomst_BronIntegerGegeven">
+            <h5>   Bron­Integer­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_BronIntegerGegeven_waarde"></a><section id="detail_attribute_Herkomst_BronIntegerGegeven_waarde">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_BronIntegerGegeven">Bron­Integer­Gegeven</a> waarde</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>Integer</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_BronRelatieGegeven"></a><section id="detail_class_Herkomst_BronRelatieGegeven">
+            <h5>   Bron­Relatie­Gegeven</h5>
+            <a class="anchor" id="detail_association_Herkomst_BronRelatieGegeven_waarde"></a><section id="detail_association_Herkomst_BronRelatieGegeven_waarde">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_BronRelatieGegeven">Bron­Relatie­Gegeven</a> heeft­Als­Waarde</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>heeft­Als­Waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>Gerelateerd Bronobject, </p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_Bronobject">Bronobject</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_Bronobject"></a><section id="detail_class_Herkomst_Bronobject">
+            <h5>   Bronobject</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_Bronobject_type"></a><section id="detail_attribute_Herkomst_Bronobject_type">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_Bronobject">Bronobject</a> type</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>type</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>Het type Bronobject in de Bronregistratie.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>
+                           UC1 Adres
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_attribute_Herkomst_Bronobject_identificatie"></a><section id="detail_attribute_Herkomst_Bronobject_identificatie">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_Bronobject">Bronobject</a> identificatie</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>identificatie</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>De identificatie van het Bronobject in de Bronregistratie.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>
+                           UC1 Adres
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_Bronregistratie"></a><section id="detail_class_Herkomst_Bronregistratie">
+            <h5>   Bronregistratie</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_Bronregistratie_naam"></a><section id="detail_attribute_Herkomst_Bronregistratie_naam">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_Bronregistratie">Bronregistratie</a> naam</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>naam</td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>
+                           
+                           
+                           <p>De naam van de Bronregistratie.</p>
+                           
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td>
+                           UC1 Adres
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>
+                           <a class="link" href="#detail_class_Herkomst_Registratie">Registratie</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_GeorkestreerdComplexGegeven"></a><section id="detail_class_Herkomst_GeorkestreerdComplexGegeven">
+            <h5>   Georkestreerd­Complex­Gegeven</h5>
+            <a class="anchor" id="detail_association_Herkomst_GeorkestreerdComplexGegeven_waarde"></a><section id="detail_association_Herkomst_GeorkestreerdComplexGegeven_waarde">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_GeorkestreerdComplexGegeven">Georkestreerd­Complex­Gegeven</a> bestaat­Uit</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>bestaat­Uit</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_GeorkestreerdGegeven">Georkestreerd­Gegeven</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>2 .. *</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_GeorkestreerdSimpelGegeven"></a><section id="detail_class_Herkomst_GeorkestreerdSimpelGegeven">
+            <h5>   Georkestreerd­Simpel­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_GeorkestreerdSimpelGegeven_waarde"></a><section id="detail_attribute_Herkomst_GeorkestreerdSimpelGegeven_waarde">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_GeorkestreerdSimpelGegeven">Georkestreerd­Simpel­Gegeven</a> waarde</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_BronComplexGegeven"></a><section id="detail_class_Herkomst_BronComplexGegeven">
+            <h5>   Bron­Complex­Gegeven</h5>
+            <a class="anchor" id="detail_association_Herkomst_BronComplexGegeven_gegeven"></a><section id="detail_association_Herkomst_BronComplexGegeven_gegeven">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_BronComplexGegeven">Bron­Complex­Gegeven</a> bestaat­Uit</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>bestaat­Uit</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_Brongegeven">Brongegeven</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>2 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_GeorkestreerdRelatieGegeven"></a><section id="detail_class_Herkomst_GeorkestreerdRelatieGegeven">
+            <h5>   Georkestreerd­Relatie­Gegeven</h5>
+            <a class="anchor" id="detail_association_Herkomst_GeorkestreerdRelatieGegeven_waarde"></a><section id="detail_association_Herkomst_GeorkestreerdRelatieGegeven_waarde">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_GeorkestreerdRelatieGegeven">Georkestreerd­Relatie­Gegeven</a> heeft­Als­Doel</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>heeft­Als­Doel</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_AnyFeature">Any­Feature</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         <a class="anchor" id="detail_class_Herkomst_BronSimpelGegeven"></a><section id="detail_class_Herkomst_BronSimpelGegeven">
+            <h5>   Bron­Simpel­Gegeven</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_BronSimpelGegeven_waarde"></a><section id="detail_attribute_Herkomst_BronSimpelGegeven_waarde">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_BronSimpelGegeven">Bron­Simpel­Gegeven</a> waarde</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>waarde</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         
+         <a class="anchor" id="detail_class_Herkomst_AnyFeature"></a><section id="detail_class_Herkomst_AnyFeature">
+            <h5>   Any­Feature</h5>
+            <a class="anchor" id="detail_attribute_Herkomst_AnyFeature_anyAttribute"></a><section id="detail_attribute_Herkomst_AnyFeature_anyAttribute">
+               <h6>Attribuutsoort details  <a href="#global_class_Herkomst_AnyFeature">Any­Feature</a> any­Attribute</h6>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>any­Attribute</td>
+                     </tr>
+                     <tr>
+                        <th>Formaat</th>
+                        <td>CHARACTERSTRING</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie classificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie identificerend</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_association_Herkomst_AnyFeature_anyRole"></a><section id="detail_association_Herkomst_AnyFeature_anyRole">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_AnyFeature">Any­Feature</a> any­Role</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>any­Role</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_AnyFeature">Any­Feature</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>0 .. *</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            <a class="anchor" id="detail_association_Herkomst_AnyFeature_registratiegegevens"></a><section id="detail_association_Herkomst_AnyFeature_registratiegegevens">
+               <h6>Relatiesoort details  <a href="#global_class_Herkomst_AnyFeature">Any­Feature</a> is­Geregistreerd­Met</h6>
+               
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>is­Geregistreerd­Met</td>
+                     </tr>
+                     <tr>
+                        <th>Gerelateerd objecttype</th>
+                        <td>
+                           <a class="link" href="#global_class_Herkomst_Registratiegegevens">Registratiegegevens</a>
+                           </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie kardinaliteit</th>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <th>Mogelijk geen waarde</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               </section>
+            </section>
+         </section>
+      
+      
+      
+      
+      
+      </section>
+</section>
+<section id="lis" class="normative">
+   <h2>Inhoud van waardenlijsten</h2>
+   <!--MIMCM-Herkomst-Stereotyped-1.0-0-20230207-20230223-213013 imvertor Nightly-build.3--><a class="anchor" id="graph_EAID_8747FB16_7C20_4589_951F_883BC49F9DF8"></a><a class="anchor" id="detail_class_Herkomst_Registratie"></a><section id="detail_class_Herkomst_Registratie">
+      <h3>Enumeratie details  Registratie</h3>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td>
+                  
+                  <p>Waardenlijst voor Bronregistratie.</p>
+                  </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 40%;"></colgroup>
+         <colgroup style="width: 60%;"></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <th>BAG</th>
+               <td>
+                  
+                  <p>Basisregistratie Adressen en Gebouwen</p>
+                  </td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+</section>
