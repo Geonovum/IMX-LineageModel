@@ -46,8 +46,8 @@ var respecConfig =
   //specStatus: "GN-DEF",             // Definitieve Versie
   //-- specType is verplicht bij alle andere dan BASIS ---------------------------------
   //specType: "NO",                   // Norm
-  specType: "ST",                   // Standaard
-  //specType: "IM",                   // Informatie Model
+  //specType: "ST",                   // Standaard
+  specType: "IM",                   // Informatiemodel
   //specType: "PR",                   // Praktijkrichtlijn
   //specType: "HR",                   // HandReiking
   //specType: "WA",                   // Werkafspraak
@@ -58,17 +58,17 @@ var respecConfig =
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/geonovum/<naam van de repository>",
+  github: "https://github.com/geonovum/WaU-LIN",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/geonovum/<naam van de repository>/issues",
+  issueBase: "https://github.com/geonovum/WaU-LIN/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github/geonovum/<naam van de repository>",
+  edDraftURI: "https://github/geonovum/WaU-LIN",
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
  [
     {
-      name:       "Naam Editor-1",
+      name:       "Paul Janssen",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
@@ -83,18 +83,18 @@ var respecConfig =
   authors: 
   [
     {
-      name:       "Naam Auteur-1",
+      name:       "Pano Maria",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
     }, 
     {
-      name:       "Naam Auteur-2",
-      company:    "Geonovum",
-      companyURL: "https://www.geonovum.nl"
+      name:       "Jesse Bakker",
+      company:    "Kadaster",
+      companyURL: "https://www.kadaster.nl"
     }, 
   ],
   //-- shortName is verplicht! (komt in de URL: kies logische naam) --------------------
-  shortName: "et",  	              // Wordt gebruikt in de document URL
+  shortName: "lin",  	              // Wordt gebruikt in de document URL
   //-- pubDomain is verplicht! (komt in de URL: Activeer 1 van de volgende) ------------
   pubDomain: "et", 	              // Energie transitie
   //pubDomain: "mim", 	            // Metamodel Informatie Modellering
@@ -119,13 +119,13 @@ var respecConfig =
   //-- NB: kijk eesrt naar de beschikbare www.specref.org voor verwijziging 
   localBiblio: 
   {
-    "PUB-1":
+    "Property-Stereotype-for-Metadata":
       {
-        title:      "Titel van Publicatie-1",
-        href:       "https://www.geonovum.nl",
-        status:     "V1.0.1",
+        title:      "Property Stereotype for Metadata",
+        href:       "https://shapechange.net/wp-content/uploads/2019/12/UGAS19-D100_property_stereotypes.pdf",
+        status:     "V1.0",
         publisher:  "Publisher-1",
-        company:    "Companynaam",
+        company:    "Interactive Instruments",
     },
     "PUB-2":
       {
