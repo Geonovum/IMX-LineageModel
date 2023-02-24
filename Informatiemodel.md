@@ -1,8 +1,8 @@
 ## Information model
 
-*Dit hoofdstuk uiteraard alleen als een informatiemodel onderwerp is van het rapport*
+The next chapter will describe the lineage information model. UML diagrams and an objectcataloque are presented.
 
-### Information model
+The UML diagrams are linked to the objectcatalogue items by clicking on the objecttypes.
 
-*Beschrijf het informatiemodel op hoofdlijnen, waarschijnlijk is of komt er een apart informatiemodeldocument, verwijs daar dan naar*
+
 

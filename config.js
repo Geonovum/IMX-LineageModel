@@ -53,7 +53,7 @@ var respecConfig =
   //specType: "WA",                   // Werkafspraak
   //specType: "BD",                   // Beheer Documentatie
   //-- format is verplicht! -----------------------------------------------------------
-  format: "markdown",                 // altijd "markdown" - JvG W3C aangepast, op 1 plek markdown aangeven    
+  //format: "markdown",                 // altijd "markdown" - JvG W3C aangepast, op 1 plek markdown aangeven    
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
