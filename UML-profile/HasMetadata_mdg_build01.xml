@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<MDG.Technology version="1.0"><Documentation id="build01" name="HasMetadata" version="1.0" notes="MDG for stereotyping properties having related metadata. Build01" supportURI="www.geonovum.nl"/><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="957F652D-7" name="HasMetadata" version="1.0" notes="UML extensie for relating metadata at property level"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="HasMetadata" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Property">
+								<Property name="isReference" value="false"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="Metadata type" type="CharacterString" description="" unit="" values="" default="GeorkestreerdGegeven"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="HasRoleMetadata" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<TaggedValues>
+							<Tag name="Metadata type" type="CharacterString" description="" unit="" values="" default="GeorkestreerdGegeven"/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+				<ViewDefinitions/>
+				<Metamodel/>
+			</Content>
+		</UMLProfile>
+	</UMLProfiles></MDG.Technology>

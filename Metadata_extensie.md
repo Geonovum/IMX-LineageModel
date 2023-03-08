@@ -57,14 +57,16 @@ In figure 2 the value for `Metadata type = PropertyMetadata` is only an example 
 
 # MIM-UML extension
 
-The defined stereotype and related tagged value lead to an extension of the MIM model. As the extension for now is independent from MIM teh extension is described both as an extension of the UML metamodel and the MIM-UML model.
+The defined stereotype and related tagged value lead to an extension of the MIM model. As the extension for now is independent from MIM the extension is described both as an extension of the UML metamodel and the MIM-UML model.
 
 **Extension on UML**
 
 <figure id="Figure_3">
 <img src="media/UML extension.png" alt="">
-<figcaption>Stereotype `«HasMetadata»` as extension on UML metaclasses</figcaption>
+<figcaption>Stereotype `«HasMetadata»` as extension on UML metaclass Property</figcaption>
 </figure>
+
+This UML profile is implemented in a EA MDG Technology named [HasMetadata_mdg](UML-profile/HasMetadata_mdg_build01.xml).
 
 **Extension on MIM-UML**
 
