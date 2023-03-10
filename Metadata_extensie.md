@@ -52,7 +52,7 @@ Tagged Value: Metadata type
 Description:
 This tagged value specifies the relation to a specific target class of or in a specific metadata model. This target class serves as the receptor defining the type of metadata that is associated.
 
-In figure 2 the value for `Metadata type = PropertyMetadata` is only an example and may differ according to the required metadata class that relates to the specified metadata.
+In figure 2 the value for `Metadata type = GeorkestreerdGegeven` is only an example and may differ according to the required metadata class that relates to the specified metadata.
 
 
 # MIM-UML extension
