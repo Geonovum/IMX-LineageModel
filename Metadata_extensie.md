@@ -75,6 +75,13 @@ This UML profile is implemented in a EA MDG Technology named [HasMetadata_mdg](U
 <figcaption>Todo: Stereotype `«HasMetadata»` as extension on MIM-UML metaclasses</figcaption>
 </figure>
  
+ 
+ **Example of this Metadata profile applied in a MIM-UML model.**
+ 
+ <figure id="Figure_5">
+<img src="media/Example_gebouw.png" alt="">
+<figcaption>Example of Stereotype `«HasMetadata»` applied in MIM-UML model</figcaption>
+</figure>
 
 # Implementation, encoding.
 
@@ -83,17 +90,17 @@ The challenges regarding the implementation of this conceptual metadata construc
 The UML model of this pattern is presented below.
 
 
-<figure id="Figure_5">
+<figure id="Figure_6">
 <img src="media/Binding model.png" alt="">
 <figcaption>Pattern for the Metadata binding model. Objectification of properties.</figcaption>
 </figure>
 
 
 Explanation of diagram.  
-The Metadata binding model serves as a objectification of the properties of the productmodel. Each property (attributes and association roles) is transfomed to an instance of the objecttype `PropertyType` having its name in `propertName`. Depending on the type of property (or its associated value type) a SimplePropertData, ComplexPropertyData or the AssociationPropertyData is chosen.
+The Metadata binding model serves as a objectification of the properties of the productmodel. Each property (attributes and association roles) is transfomed to an instance of the objecttype `GeorkestreerdGegeven` having its name in `propertyName`. Depending on the type of property (or its associated value type) a SimplePropertData, ComplexPropertyData or the AssociationPropertyData is chosen.
 SimplePropertyData for properties with a unstructured valuetypes, ComplexPropertyData for structured valuetypes and AssociationPropertyData for association roles.
 The value of a property is transformed to the `value` attribute or the `value` association role.
 
 In this model there is no explicit information link between a property and its value of the productmodel and its objectified `PropertyData` and value instance. To bind data of the productmodel to instances of 'PropertyData' is bij convention. The convention is that instances from objecttypes of the Productmodel and its properties and values by convention are bindend to instances of PropertyData and values in the Metadata Binding Model having the value for `propertName` and `value` equal to the name of the property and its value.  
-So without specifying apart for the three subtypes of `PropertyData` the convention rule is: `Productmodel.property = PropertyData.propertyName AND Productmodel.property.value = PropertyData.value`
+So without specifying apart for the three subtypes of `GeorkestreerdGegeven` the convention rule is: `Productmodel.property = GeorkestreerdGegeven.propertyName AND Productmodel.property.value = GeorkestreerdGegeven.value`
 
