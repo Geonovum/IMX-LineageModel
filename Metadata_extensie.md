@@ -102,5 +102,5 @@ SimplePropertyData for properties with a unstructured valuetypes, ComplexPropert
 The value of a property is transformed to the `value` attribute or the `value` association role.
 
 In this model there is no explicit information link between a property and its value of the productmodel and its objectified `PropertyData` and value instance. To bind data of the productmodel to instances of 'PropertyData' is bij convention. The convention is that instances from objecttypes of the Productmodel and its properties and values by convention are bindend to instances of PropertyData and values in the Metadata Binding Model having the value for `propertName` and `value` equal to the name of the property and its value.  
-So without specifying apart for the three subtypes of `GeorkestreerdGegeven` the convention rule is: `Productmodel.property = GeorkestreerdGegeven.propertyName AND Productmodel.property.value = GeorkestreerdGegeven.value`
+So without specifying specifically for the three subtypes of `GeorkestreerdGegeven` the convention rule is: `Productmodel.property = GeorkestreerdGegeven.propertyName AND Productmodel.property.value = GeorkestreerdGegeven.value`
 
