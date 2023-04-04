@@ -69,6 +69,9 @@
       "$anchor": "Brongegeven",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "kenmerk": {
           "type": "string"
         },
@@ -80,6 +83,7 @@
         }
       },
       "required": [
+        "@type",
         "bronregistratie",
         "kenmerk",
         "onderwerp"
@@ -89,6 +93,9 @@
       "$anchor": "Bronobject",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "type": {
           "type": "string"
         },
@@ -97,6 +104,7 @@
         }
       },
       "required": [
+        "@type",
         "identificatie",
         "type"
       ]
@@ -105,11 +113,15 @@
       "$anchor": "Bronregistratie",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "naam": {
           "type": "string"
         }
       },
       "required": [
+        "@type",
         "naam"
       ]
     },
@@ -141,6 +153,9 @@
       "$anchor": "GeorkestreerdGegeven",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "kenmerk": {
           "type": "string"
         },
@@ -153,6 +168,7 @@
         }
       },
       "required": [
+        "@type",
         "kenmerk",
         "onderwerp",
         "wasGeneratedBy"
@@ -200,6 +216,9 @@
       "$anchor": "Object",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "domein": {
           "type": "string"
         },
@@ -208,6 +227,7 @@
         }
       },
       "required": [
+        "@type",
         "domein",
         "identificatie"
       ]
@@ -216,6 +236,9 @@
       "$anchor": "PropertyMapping",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "pathMapping": {
           "type": "array",
           "items": {
@@ -223,17 +246,24 @@
           },
           "uniqueItems": true
         }
-      }
+      },
+      "required": [
+        "@type"
+      ]
     },
     "PropertyMappingExecution": {
       "$anchor": "PropertyMappingExecution",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "used": {
           "$ref": "#PropertyMapping"
         }
       },
       "required": [
+        "@type",
         "used"
       ]
     },
@@ -241,6 +271,9 @@
       "$anchor": "PropertyPath",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "segments": {
           "type": "array",
           "minItems": 1,
@@ -261,6 +294,7 @@
         }
       },
       "required": [
+        "@type",
         "segments",
         "startNode"
       ]
@@ -269,6 +303,9 @@
       "$anchor": "PropertyPathMapping",
       "type": "object",
       "properties": {
+        "@type": {
+          "type": "string"
+        },
         "path": {
           "type": "array",
           "items": {
@@ -276,7 +313,10 @@
           },
           "uniqueItems": true
         }
-      }
+      },
+      "required": [
+        "@type"
+      ]
     },
     "Waardetype": {
       "$anchor": "Waardetype",

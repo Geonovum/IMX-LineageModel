@@ -93,7 +93,7 @@
       "$anchor": "Brongegeven",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -128,7 +128,7 @@
       "$anchor": "Bronobject",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -159,7 +159,7 @@
       "$anchor": "Bronregistratie",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -218,7 +218,7 @@
       "$anchor": "GeorkestreerdGegeven",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -308,7 +308,7 @@
       "$anchor": "Object",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -339,7 +339,7 @@
       "$anchor": "PropertyMapping",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -364,7 +364,7 @@
       "$anchor": "PropertyMappingExecution",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -391,7 +391,7 @@
       "$anchor": "PropertyPath",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -434,7 +434,7 @@
       "$anchor": "PropertyPathMapping",
       "allOf": [
         {
-          "$ref": "https://geojson.org/schema/Feature.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
         },
         {
           "type": "object",
@@ -467,13 +467,13 @@
           ]
         },
         {
-          "$ref": "https://geojson.org/schema/LineString.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/geometry-objects.json#/$defs/LineString"
         },
         {
-          "$ref": "https://geojson.org/schema/Point.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/geometry-objects.json#/$defs/Point"
         },
         {
-          "$ref": "https://geojson.org/schema/Polygon.json"
+          "$ref": "https://beta.schemas.opengis.net/json-fg/geometry-objects.json#/$defs/Polygon"
         }
       ]
     }
