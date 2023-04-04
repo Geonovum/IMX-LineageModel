@@ -1,0 +1,344 @@
+{
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://example.org/FIXME/test/lineage.json",
+  "$defs": {
+    "BronComplexGegeven": {
+      "$anchor": "BronComplexGegeven",
+      "allOf": [
+        {
+          "$ref": "#Brongegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "gegeven": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "$ref": "#Brongegeven"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "gegeven"
+          ]
+        }
+      ]
+    },
+    "BronRelatieGegeven": {
+      "$anchor": "BronRelatieGegeven",
+      "allOf": [
+        {
+          "$ref": "#Brongegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "waarde": {
+              "$ref": "#Bronobject"
+            }
+          },
+          "required": [
+            "waarde"
+          ]
+        }
+      ]
+    },
+    "BronSimpelGegeven": {
+      "$anchor": "BronSimpelGegeven",
+      "allOf": [
+        {
+          "$ref": "#Brongegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "waarde": {
+              "$ref": "#Waardetype"
+            }
+          },
+          "required": [
+            "waarde"
+          ]
+        }
+      ]
+    },
+    "Brongegeven": {
+      "$anchor": "Brongegeven",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "kenmerk": {
+          "type": "string"
+        },
+        "onderwerp": {
+          "$ref": "#Bronobject"
+        },
+        "bronregistratie": {
+          "$ref": "#Bronregistratie"
+        }
+      },
+      "required": [
+        "@type",
+        "bronregistratie",
+        "kenmerk",
+        "onderwerp"
+      ]
+    },
+    "Bronobject": {
+      "$anchor": "Bronobject",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "identificatie": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "identificatie",
+        "type"
+      ]
+    },
+    "Bronregistratie": {
+      "$anchor": "Bronregistratie",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "naam": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "naam"
+      ]
+    },
+    "GeorkestreerdComplexGegeven": {
+      "$anchor": "GeorkestreerdComplexGegeven",
+      "allOf": [
+        {
+          "$ref": "#GeorkestreerdGegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "waarde": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "$ref": "#GeorkestreerdGegeven"
+              },
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "waarde"
+          ]
+        }
+      ]
+    },
+    "GeorkestreerdGegeven": {
+      "$anchor": "GeorkestreerdGegeven",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "kenmerk": {
+          "type": "string"
+        },
+        "onderwerp": {
+          "type": "string",
+          "format": "uri-reference"
+        },
+        "wasGeneratedBy": {
+          "$ref": "#PropertyMappingExecution"
+        }
+      },
+      "required": [
+        "@type",
+        "kenmerk",
+        "onderwerp",
+        "wasGeneratedBy"
+      ]
+    },
+    "GeorkestreerdRelatieGegeven": {
+      "$anchor": "GeorkestreerdRelatieGegeven",
+      "allOf": [
+        {
+          "$ref": "#GeorkestreerdGegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "waarde": {
+              "$ref": "#Object"
+            }
+          },
+          "required": [
+            "waarde"
+          ]
+        }
+      ]
+    },
+    "GeorkestreerdSimpelGegeven": {
+      "$anchor": "GeorkestreerdSimpelGegeven",
+      "allOf": [
+        {
+          "$ref": "#GeorkestreerdGegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "waarde": {
+              "$ref": "#Waardetype"
+            }
+          },
+          "required": [
+            "waarde"
+          ]
+        }
+      ]
+    },
+    "Object": {
+      "$anchor": "Object",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "domein": {
+          "type": "string"
+        },
+        "identificatie": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "@type",
+        "domein",
+        "identificatie"
+      ]
+    },
+    "PropertyMapping": {
+      "$anchor": "PropertyMapping",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "pathMapping": {
+          "type": "array",
+          "items": {
+            "$ref": "#PropertyPathMapping"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    },
+    "PropertyMappingExecution": {
+      "$anchor": "PropertyMappingExecution",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "used": {
+          "$ref": "#PropertyMapping"
+        }
+      },
+      "required": [
+        "@type",
+        "used"
+      ]
+    },
+    "PropertyPath": {
+      "$anchor": "PropertyPath",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "segments": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "startNode": {
+          "$ref": "#Bronobject"
+        },
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "#Brongegeven"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "@type",
+        "segments",
+        "startNode"
+      ]
+    },
+    "PropertyPathMapping": {
+      "$anchor": "PropertyPathMapping",
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        },
+        "path": {
+          "type": "array",
+          "items": {
+            "$ref": "#PropertyPath"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    },
+    "Waardetype": {
+      "$anchor": "Waardetype",
+      "oneOf": [
+        {
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean"
+          ]
+        },
+        {
+          "$ref": "https://geojson.org/schema/LineString.json"
+        },
+        {
+          "$ref": "https://geojson.org/schema/Point.json"
+        },
+        {
+          "$ref": "https://geojson.org/schema/Polygon.json"
+        }
+      ]
+    }
+  }
+}

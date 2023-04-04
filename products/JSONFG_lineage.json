@@ -1,0 +1,481 @@
+{
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://example.org/FIXME/test/lineage.json",
+  "$defs": {
+    "BronComplexGegeven": {
+      "$anchor": "BronComplexGegeven",
+      "allOf": [
+        {
+          "$ref": "#Brongegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "gegeven": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "$ref": "#Brongegeven"
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "gegeven"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "BronRelatieGegeven": {
+      "$anchor": "BronRelatieGegeven",
+      "allOf": [
+        {
+          "$ref": "#Brongegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "waarde": {
+                  "$ref": "#Bronobject"
+                }
+              },
+              "required": [
+                "waarde"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "BronSimpelGegeven": {
+      "$anchor": "BronSimpelGegeven",
+      "allOf": [
+        {
+          "$ref": "#Brongegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "waarde": {
+                  "$ref": "#Waardetype"
+                }
+              },
+              "required": [
+                "waarde"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "Brongegeven": {
+      "$anchor": "Brongegeven",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "kenmerk": {
+                  "type": "string"
+                },
+                "onderwerp": {
+                  "$ref": "#Bronobject"
+                },
+                "bronregistratie": {
+                  "$ref": "#Bronregistratie"
+                }
+              },
+              "required": [
+                "bronregistratie",
+                "kenmerk",
+                "onderwerp"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "Bronobject": {
+      "$anchor": "Bronobject",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "identificatie": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "identificatie",
+                "type"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "Bronregistratie": {
+      "$anchor": "Bronregistratie",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "naam": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "naam"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "GeorkestreerdComplexGegeven": {
+      "$anchor": "GeorkestreerdComplexGegeven",
+      "allOf": [
+        {
+          "$ref": "#GeorkestreerdGegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "waarde": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "$ref": "#GeorkestreerdGegeven"
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "waarde"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "GeorkestreerdGegeven": {
+      "$anchor": "GeorkestreerdGegeven",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "kenmerk": {
+                  "type": "string"
+                },
+                "onderwerp": {
+                  "type": "string",
+                  "format": "uri-reference"
+                },
+                "wasGeneratedBy": {
+                  "$ref": "#PropertyMappingExecution"
+                }
+              },
+              "required": [
+                "kenmerk",
+                "onderwerp",
+                "wasGeneratedBy"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "GeorkestreerdRelatieGegeven": {
+      "$anchor": "GeorkestreerdRelatieGegeven",
+      "allOf": [
+        {
+          "$ref": "#GeorkestreerdGegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "waarde": {
+                  "$ref": "#Object"
+                }
+              },
+              "required": [
+                "waarde"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "GeorkestreerdSimpelGegeven": {
+      "$anchor": "GeorkestreerdSimpelGegeven",
+      "allOf": [
+        {
+          "$ref": "#GeorkestreerdGegeven"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "waarde": {
+                  "$ref": "#Waardetype"
+                }
+              },
+              "required": [
+                "waarde"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "Object": {
+      "$anchor": "Object",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "domein": {
+                  "type": "string"
+                },
+                "identificatie": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domein",
+                "identificatie"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "PropertyMapping": {
+      "$anchor": "PropertyMapping",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "pathMapping": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#PropertyPathMapping"
+                  },
+                  "uniqueItems": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "PropertyMappingExecution": {
+      "$anchor": "PropertyMappingExecution",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "used": {
+                  "$ref": "#PropertyMapping"
+                }
+              },
+              "required": [
+                "used"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "PropertyPath": {
+      "$anchor": "PropertyPath",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "segments": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true
+                },
+                "startNode": {
+                  "$ref": "#Bronobject"
+                },
+                "references": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#Brongegeven"
+                  },
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "segments",
+                "startNode"
+              ]
+            }
+          },
+          "required": [
+            "properties"
+          ]
+        }
+      ]
+    },
+    "PropertyPathMapping": {
+      "$anchor": "PropertyPathMapping",
+      "allOf": [
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/feature.json"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "properties": {
+                "path": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#PropertyPath"
+                  },
+                  "uniqueItems": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "Waardetype": {
+      "$anchor": "Waardetype",
+      "oneOf": [
+        {
+          "type": [
+            "string",
+            "number",
+            "integer",
+            "boolean"
+          ]
+        },
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/geometry-objects.json#/$defs/LineString"
+        },
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/geometry-objects.json#/$defs/Point"
+        },
+        {
+          "$ref": "https://beta.schemas.opengis.net/json-fg/geometry-objects.json#/$defs/Polygon"
+        }
+      ]
+    }
+  }
+}
