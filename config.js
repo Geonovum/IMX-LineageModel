@@ -127,6 +127,13 @@ var respecConfig =
         publisher:  "Publisher-1",
         company:    "Interactive Instruments",
     },
+    "WAU-MAP":
+    {
+      title:      "WaU IMX Model Mapping",
+      href:       "https://geonovum.github.io/WaU-MAP",
+      status:     "ED",
+      publisher:  "Geonovum",
+  },
     "PUB-2":
       {
         title:      "Titel van Publicatie-2",
