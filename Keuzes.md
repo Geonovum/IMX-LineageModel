@@ -3,9 +3,9 @@ Within this chapter two sections are presented; Requirements and Approach. In th
 
 ### Requirements
 
-1. **We should be able to identify and describe singular data elements.**
-2.  **We should be able to describe which data elements contributed to the generation of a data element**
-3. **We should be able to describe actvities that act upon data elements.**
+1. **We should be able to identify and describe singular data elements**
+2. **We should be able to describe which data elements contributed to the generation of a data element**
+3. **We should be able to describe actvities that act upon data elements**
 4. **We should be able to find data elements that contributed to the generation of a data element**
 5. **We should be able to describe how data elements contributed to the generation of a data element**
 
