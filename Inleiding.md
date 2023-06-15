@@ -18,23 +18,6 @@ The scope of this lineage model is:
 This report will also include a specification of relating lineage as metadata to conceptual UML application schema at the property level.
 
 
-
-### Target audience
-
-Information modeller, API developer, IT architect.
-
-
-
-### Introduction to document
-
-*Beschrijf hoe het document gelzezen moet worden, welke hoofdstukken voor wie bedoeld zijn, enz...*
-
-[Analysis](#analysis)  
-[Requierments and approach](#requirements-and-approach)   
-[Expert Sessions](#expert-sessions)   
-[Information model](#information-model)   
-[Conclusions and recommendations](#conclusions-and-recommendations)  
-
 ### Working proces
 
 This document, lineage model, is developed in the WaU project .....
