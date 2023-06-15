@@ -15,7 +15,7 @@ Within this chapter two sections are presented; Requirements and Approach. In th
 
 ### Approach
 
-The first requirement to indentify and describe singular data realized biy the introduction of the data element as described in ......
+The first requirement to identify and describe singular data is realized by the introduction of the data element as described in https://geonovum.github.io/WaU-Metadata/#data-element.
 
 ![](media/level1.3.png)
 
