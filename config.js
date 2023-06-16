@@ -134,13 +134,12 @@ var respecConfig =
       status:     "ED",
       publisher:  "Geonovum",
   },
-    "PUB-2":
+    "WAU-Metadata":
       {
-        title:      "Titel van Publicatie-2",
-        href:       "https://www.geonovum.nl",
-        status:     "V1.0.1",
-        publisher:  "Publisher-2",
-        company:    "Companynaam",
+        title:      "WaU - Metadata basic principles",
+        href:       "https://geonovum.github.io/WaU-Metadata/",
+        status:     "ED",
+        publisher:  "Geonovum",
     },
     "PUB-3":
       {
@@ -157,9 +156,9 @@ var respecConfig =
         status:     "V1.0.1",
         publisher:  "Publisher-4",
         company:    "Companynaam",
-    },
-  },
-  postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
+    }
+  }
+  // postProcess:[custGHPG],   //-- Optioneel voor een multi document repository
 
   //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
   //previousPublishDate: "2018-09-18",  	    // Format is "YYY-MM-DD"

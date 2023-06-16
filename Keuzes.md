@@ -10,34 +10,25 @@ Within this chapter two sections are presented; Requirements and Approach. In th
 5. **We should be able to describe how data elements contributed to the generation of a data element**
 
 
-<!-- 2. **We should be able to trace back data elements to those it is derived from.** -->
-<!-- 2. **We should be able to describe lineage-relationships between data elements.** -->
-
 ### Approach
 
-The first requirement to identify and describe singular data is realized by the introduction of the data element as described in https://geonovum.github.io/WaU-Metadata/#data-element.
+The first requirement to identify and describe singular data is realized by the introduction of the data element as described in [WaU-Metadata](https://geonovum.github.io/WaU-Metadata/#data-element). 
 
 ![](media/level1.3.png)
 
-A data element can be described from different point of views. This gives a basic model applicable for many usecases. The perpective the lineage model takes is one of provenance. Questions to be answered include, for instance, where, how and by whom, is the statement `Building G0200.42b3d39246840268e0530a0a28492340 has construction date 2006` created? Other models could address other aspects of a data element; for instance whether it is subject to an examination of correctness (which could be relevant for the BAG: https://catalogus.kadaster.nl/bag/nl/page/InOnderzoek) or what is the quality of a data element. 
-
-
-The lineage model add to this a way to connect one data element to one or more other data elements it is derived from. The latter are called source data elements, the former orchestrated data elements.
+A data element can be described from different point of views. This gives a basic model applicable for many usecases. The perpective the lineage model takes is one of provenance. The lineage model adds to this a way to connect one data element to one or more other data elements it is derived from. The latter are called source data elements, the former orchestrated data elements.
 For the source data elements it is important to know which registry or dataset it is retrieved from so that users can interpret the source data element in the context it was published in. This also allows allows users to find related information.
 
 ![](media/level2.1.png)
-
-
 
 | Term                      | Definition                                                                                              |
 | ------------------------- | ------------------------------------------------------------------------------------------------------- |
 | source data element       | A source data element is a data element that is used for the creation of a new data element.            |
 | orchestrated data element | A orchestrated data element is a data element that is created using one or more source data element(s). |
-| registration              | A registration is a record of a set of data elements.                                                   |
-| registry                  | A registry is a dataset a source data element can be retrieved from using a data service.               |
+| registration | A registration is a record of a set of data elements.                                                   |
+| registry> | A registry is a dataset a source data element can be retrieved from using a data service.               |
 
 A data example:
-
 
 <pre>
 {
@@ -201,22 +192,26 @@ When multiple source data elements are used this would result in multiple `"wasI
 #### Summary
 
 The requirements are reflected in the model by introducing the following concepts:
-- **Data element**
-  - "orchestrated data element" for req 1
-  - "source data element" for req 2.
-  
-   In order to describe lineage information about date elements we need to be able to talk about them.
+
+- **Data element** 
+      - "orchestrated data element" for req 1
+      - "source data element" for req 2.
+    
+      In order to be able to talk about them.
+
 - **Orchestration Activity**
-  - Property Mapping execution and property path execution for req 3
+      - Property Mapping execution and property path execution for req 3
   
-  In order to describe that orchestration took place.
+      In order to describe that orchestration took place.
+
 - **Registry** for req 4.
   
-  In order to decribe where source data is retrieved from and thus can be found.
+      In order to decribe where source data is retrieved from and thus can be found.
+
 - **Mapping element**
-  -  Property Mapping and property path for req 5.
+      -  Property Mapping and property path for req 5.
   
-  In order to precisely indicate what rules were applied to the source data to derive the orchestrated data.
+      In order to precisely indicate what rules were applied to the source data to derive the orchestrated data.
 
 In short:
 

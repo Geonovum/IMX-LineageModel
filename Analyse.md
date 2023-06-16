@@ -8,13 +8,11 @@ The lineage model explained in this document provides a standardised way to work
 
 ###	Related or referenced standards
 
-Reference used standards 
-
 - [[WAU-MAP]]
 - [[prov-o]]
+- [[WAU-Metadata]]
 
 ###	Relevant documentation 
-
 
 [[Property-Stereotype-for-Metadata]], Interactive Instruments
 
