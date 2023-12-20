@@ -122,17 +122,17 @@ var respecConfig =
         publisher:  "Publisher-1",
         company:    "Interactive Instruments",
     },
-    "WAU-MAP":
+    "IMX-ModelMapping":
     {
-      title:      "WaU IMX Model Mapping",
-      href:       "https://geonovum.github.io/IMX-Modelmapping",
+      title:      "IMX Model Mapping",
+      href:       "https://geonovum.github.io/IMX-ModelMapping",
       status:     "ED",
       publisher:  "Geonovum",
   },
-    "WAU-Metadata":
+    "IMX-Metadata":
       {
-        title:      "WaU - Metadata basic principles",
-        href:       "https://geonovum.github.io/IMX-Metadata/",
+        title:      "IMX - Metadata basic principles",
+        href:       "https://geonovum.github.io/IMX-Metadata",
         status:     "ED",
         publisher:  "Geonovum",
     },

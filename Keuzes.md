@@ -3,30 +3,30 @@ Within this chapter two sections are presented; Requirements and Approach. In th
 
 ### Requirements
 
-1. **We should be able to identify and describe singular data elements**
-2. **We should be able to describe which data elements contributed to the generation of a data element**
-3. **We should be able to describe actvities that act upon data elements**
-4. **We should be able to find data elements that contributed to the generation of a data element**
-5. **We should be able to describe how data elements contributed to the generation of a data element**
+1. **We should be able to identify and describe singular data items**
+2. **We should be able to describe which data items contributed to the generation of a data item**
+3. **We should be able to describe activities that act upon data items**
+4. **We should be able to find data items that contributed to the generation of a data item**
+5. **We should be able to describe how data item contributed to the generation of a data item**
 
 
 ### Approach
 
-The first requirement to identify and describe singular data is realized by the introduction of the data element as described in [WaU-Metadata](https://geonovum.github.io/WaU-Metadata/#data-element). 
+The first requirement to identify and describe singular pieces data is realized by the introduction of the data item objecttype as described in [IMX-Metadata](https://geonovum.github.io/IMX-Metadata/#vocabulary). 
 
-![](media/level1.3.png)
+![](https://geonovum.github.io/IMX-Metadata/media/DataItem.png)
 
-A data element can be described from different points of view. This gives a basic model applicable for many usecases. The view the lineage model takes is one of provenance. The lineage model adds to this a way to connect one data element to one or more other data elements it is derived from. The latter are called source data elements, the former orchestrated data elements.
-For the source data elements it is important to know which registry or dataset it is retrieved from so that users can interpret the source data element in the context it was published in. This also allows allows users to find related information.
+A data item can be described from different perspectives. This gives a basic model applicable for many usecases. The perpective the lineage model takes is one of provenance. The lineage model adds to this a way to connect one data item to one or more other data items it is derived from. The latter are called [=source data item=]s, the former [=orchestrated data item=]s.
+For the source data item it is important to know from which data source it is retrieved so that users can interpret the source data item in the context it was published in. This also allows allows users to find related information.
 
 ![](media/level2.1.png)
 
-| Term                      | Definition                                                                                              |
-| ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| source data element       | A source data element is a data element that is used for the creation of a new data element.            |
-| orchestrated data element | A orchestrated data element is a data element that is created using one or more source data element(s). |
-| registration | A registration is a record of a set of data elements.                                                   |
-| registry> | A registry is a dataset a source data element can be retrieved from using a data service.               |
+| Term                              | Definition                                                                                        |
+| --------------------------------- | ------------------------------------------------------------------------------------------------- |
+| <dfn>source data item</dfn>       | A source data item is a data item that serves as input for an orchestration activity.             |
+| <dfn>orchestrated data item</dfn> | An orchestrated data item is a data item that is generated/obtained by orchestrating source data. |
+| <dfn>data object</dfn>            | A data object is a contextually grouped set of data items.                                        |
+| <dfn>data source</dfn>            | A data source is an entity which provides access to a dataset.                                    |
 
 A data example:
 
@@ -61,7 +61,7 @@ A data example:
 }
 </pre>
 
-This, however, does not provide any insight into how the source data element(s) were used to generate the data element. In order to allow for this the generation itself is identified as an orchestration activity, which is a type of activity. This provides the information that the data element is generated using orchestration techniques.
+This, however, does not provide any insight into how the source data item(s) were used to generate the orchestrated data item. In order to allow for this the generation itself is identified as an [=orchestration activity=], which is a type of activity. This provides the information that the data item is generated using orchestration techniques.
 
 ![](media/level2.2.png)
 
@@ -98,29 +98,35 @@ This, however, does not provide any insight into how the source data element(s) 
 }
 </pre>
 
-Lastly we provide insights into the transformation itself, the mapping used for the orchestration activity. The mapping is described in a seperate artifact called the mapping document. This document describes the relation between two models and how data from one can be transformed to the other. The mapping is structured according to the [mapping standard](https://github.com/Geonovum/WaU-MAP). The rules to generate a specific data element are encompassed in a property mapping. This is what is executed. We introduce a specific type of orchestration activity.
+Lastly, we provide insights into the transformation itself, the mapping used for the orchestration activity. The mapping is described in a seperate artifact called the mapping document. This document describes the relation between two models and how data from one can be transformed to the other. The mapping is structured according to the [mapping standard](https://github.com/Geonovum/IMX-ModelMapping). The rules to generate a specific data item are encompassed in a property mapping. This is what is executed. We introduce a specific type of orchestration activity, the [=property mapping execution=].
 
-| Term                       | Definition                                                                                                                   |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| orchestration activity     | An orchestration activity is an activity that generates a set of data elements based on one or more sources using a mapping. |
-| property mapping execution | A property mapping execution is an orchestration activity where a specific property mapping is executed.                     |
+| Term                                 | Definition                                                                                                      |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| <dfn>orchestration activity</dfn>    | An orchestration activity is an activity that is part of an IMX orchestration process.                          |
+| <dfn>property mapping execution<dfn> | A Property mapping execution is an orchestration activity that pertains to the execution of a property mapping. |
+|                                      |
 
 ![](media/level3.2.png)
 
-The Property mapping execution can be deconstructed into several smaller activities as it may include multiple intermediary results; each having a query path and a startnode, which are then combined and/or transformed into the value of the orchestrated data element. The PropertyMapping is the main entity describing, in order, the steps (PropertyPathMappings) required to derive a specific data element. Each step is an activity that informs the property mapping execution; which yield the orchestrated data element. As part of the lineage information we refer to elements in the mapping to provide insights into how the orchestrated data element was constructed. This allows us to provide insight into which, and how, data elements were used to derive a new data element. Adding this to our lineage model yields the following model.
+The property mapping execution can be deconstructed into several smaller activities as it may include multiple intermediary results; each having a query path and a [=startnode=], which are then combined and/or transformed into the value of the orchestrated data item. The PropertyMapping is the main entity describing, in order, the steps ([=PathMapping=]s) required to derive a specific data item. Each step is an activity that informs the property mapping execution; which yield the orchestrated data item. As part of the lineage information we refer to elements in the mapping to provide insights into how the orchestrated data item was constructed. This allows us to provide insight into which, and how, data item were used to derive a new data item. Adding this to our lineage model yields the following model.
 
-| Term                    | Definition                                                                                   |
-| ----------------------- | -------------------------------------------------------------------------------------------- |
-| was informed by         | A relation between activities stating that one activity uses some output of the other activity. |
-| property path execution | A property path execution is an activity that retrieves data elements to serve as input for the property mapping execution. |
-| references              | References indicates the source data element used in a property path execution. |
-| start node              | Start node indicated the source object from which property paths are traversed to find source data elements. |
+| Term                              | Definition                                                                                                               |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| <dfn>was informed by</dfn>        | A relation between activities stating that one activity uses some output of the other activity.                          |
+| <dfn>path mapping execution</dfn> | A property path execution is an activity that retrieves data items to serve as input for the property mapping execution. |
+| <dfn>references</dfn>             | The source data item referenced by following the defined path starting from the start node.                              |
+| <dfn>start node</dfn>             | The source object from which the path is followed to find the used data item.                                            |
 
-<!-- 
-A propertyPathMapping consists out of one or more propertyPaths; each targetting one or more data elements. The lineage should give insights on precisely how each data element is found and how it contributed to the generation of the orchestrated data element. For each `"OrchestrationActivity -used-> DataElement"` we map to the respective PropertyPath.
+NOG WEL TWIJFELS OVER DIT STUKJE
 
-We do this by qualifying the used relation between the Orchestration Activity and the (source)data element. This allows us to point to the exact mapping element providing the property path that leads us to the source data element. To this qualified relation we add a pointer to the node from which the path is followed. This is the start node. 
-<div class="note">This is one approach and we might opt for another</div> -->
+A PathMapping consists out of one path; possible yielding any number of data items. The lineage should give insights on precisely how each data item was found and how it contributed to the generation of the orchestrated data item. For each `"OrchestrationActivity -used-> DataItem"` we map to the respective Path.
+
+We do this by further deconstructing the PathMappingExecution into each path that is defined in the mapping. For each [=PathExecution=] that informs the PathMappingExecution a [=used=] property is linked to the respective Path element in the mapping. This allows us to point to the exact mapping element providing the path that leads us to the source data item. A pointer to the node from which the path is followed is added, this is the start node. 
+
+| Term                      | Definition                                                                                |
+| ------------------------- | ----------------------------------------------------------------------------------------- |
+| <dfn>Path execution</dfn> | A path execution is an orchestration activity that is part of the path mapping execution. |
+
 
 ![](media/level4.1.png)
 
@@ -129,11 +135,11 @@ In this model several types have different roles following from incomming relati
 ![](media/level4.2.png)
 
 
-| Term                    | Definition                                                                                   |
-| ----------------------- | -------------------------------------------------------------------------------------------- |
-| source object           | A source object is an object that that is referenced to create an orchestrated data element. |
-| source data element     | A source data element is a data element that is used to create an orchestrated data element. |
-| property path execution | A property path execution is an activity where a property path mapping is executed.          |
+| Term                    | Definition                                                                                |
+| ----------------------- | ----------------------------------------------------------------------------------------- |
+| source object           | A source object is an object that that is referenced to create an orchestrated data item. |
+| source data item        | A source data item is a data item that is used to create an orchestrated data item.       |
+| property path execution | A property path execution is an activity where a property path mapping is executed.       |
 
 In JSON this could look as follows.
 
@@ -143,7 +149,7 @@ In JSON this could look as follows.
     "constructionDate": "2006",
     "hasLineage": {
         "orchestratedProperties": [
-            { <!-- OrchestratedDataElement -->
+            { <!-- OrchestratedDataItem -->
                 "property": "bouwjaar",
                 "value": {
                     "stringValue": "2006"
@@ -157,8 +163,8 @@ In JSON this could look as follows.
                         "objectKey": "MAP.IMXGEO.000102",
                         "objectType": "PropertyMapping"
                     }
-                    "wasInformedBy": { <!-- PropertyPathExecution -->
-                        "references": { <!-- source data element -->
+                    "wasInformedBy": { <!-- PathMappingExecution -->
+                        "references": { <!-- source data item -->
                             "property": "oorspronkelijkBouwjaar",
                             "value": {
                                 "stringValue": "2006"
@@ -168,7 +174,7 @@ In JSON this could look as follows.
                                 "objectType": Pand
                             }
                         },
-                        "used": { <!-- PropertyPath -->
+                        "used": { <!-- Path -->
                             "path": {
                                 "segments": [
                                     "isGerelateerdAan",
@@ -187,31 +193,31 @@ In JSON this could look as follows.
     }
 }
 </pre>
-When multiple source data elements are used this would result in multiple `"wasInformedBy": { ... }` statements within the `"wasGeneratedBy":{ ... }` element.
+When multiple source data items are used this would result in multiple `"wasInformedBy": { ... }` statements within the `"wasGeneratedBy":{ ... }` element.
 
 #### Summary
 
 The requirements are reflected in the model by introducing the following concepts:
 
-- **Data element** 
-      - "orchestrated data element" for req 1
-      - "source data element" for req 2.
+- **Data item** 
+      - "orchestrated data item" for req 1
+      - "source data item" for req 2.
     
       In order to be able to talk about them.
 
 - **Orchestration Activity**
-      - Property Mapping execution and property path execution for req 3
+      - Property Mapping execution and propertyMapping execution for req 3
   
       In order to describe that orchestration took place.
 
-- **Registry** for req 4.
+- **Data source** for req 4.
   
       In order to decribe where source data is retrieved from and thus can be found.
 
 - **Mapping element**
-      -  Property Mapping and property path for req 5.
+      -  Property Mapping and path for req 5.
   
-      In order to precisely indicate what rules were applied to the source data to derive the orchestrated data.
+      In order to precisely indicate what rules were applied to the source data to derive the orchestrated data item(s).
 
 In short:
 
@@ -219,7 +225,7 @@ In short:
 
 #### Limitations
 
-- We don't have a way of indicating the order of the propertyPathExecution activities which is present in the mapping.
+- We don't indicate the order of the activities or path segments which is an important aspect of the mapping
 - We don't have a way of describing the (software) agent responsible for the orchestration (can be copied from PROV-O).
-- We don't have a way of connecting the set of activities that contributed to a response. E.g. all activities for an execution of a objecttype mapping.
+- We don't describe objecttype mapping executions.
 - ...

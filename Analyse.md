@@ -8,9 +8,9 @@ The lineage model explained in this document provides a standardised way to work
 
 ###	Related or referenced standards
 
-- [[WAU-MAP]]
+- [[IMX-ModelMapping]]
 - [[prov-o]]
-- [[WAU-Metadata]]
+- [[IMX-Metadata]]
 
 ###	Relevant documentation 
 
