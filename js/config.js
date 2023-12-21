@@ -2,6 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   title: "Lineage applied to IMX-Geo",
+  pluralize: true,
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
