@@ -16,7 +16,7 @@ The first requirement to identify and describe singular data is realized by the 
 
 ![](media/level1.3.png)
 
-A data element can be described from different point of views. This gives a basic model applicable for many usecases. The perpective the lineage model takes is one of provenance. The lineage model adds to this a way to connect one data element to one or more other data elements it is derived from. The latter are called source data elements, the former orchestrated data elements.
+A data element can be described from different points of view. This gives a basic model applicable for many usecases. The view the lineage model takes is one of provenance. The lineage model adds to this a way to connect one data element to one or more other data elements it is derived from. The latter are called source data elements, the former orchestrated data elements.
 For the source data elements it is important to know which registry or dataset it is retrieved from so that users can interpret the source data element in the context it was published in. This also allows allows users to find related information.
 
 ![](media/level2.1.png)
