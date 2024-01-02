@@ -58,11 +58,11 @@ var respecConfig =
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   //publishDate: "2019-10-08",  	    // Format is "YYYY-MM-DD"
   //-- Repositorynaam op GitHub -------------------------------------------------------
-  github: "https://github.com/geonovum/WaU-LIN",
+  github: "https://github.com/geonovum/IMX-LineageModel",
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
-  issueBase: "https://github.com/geonovum/WaU-LIN/issues",
+  issueBase: "https://github.com/geonovum/IMX-LineageModel/issues",
   //-- edDraftURI: de URI van de werkversie van het document
-  edDraftURI: "https://github/geonovum/WaU-LIN",
+  edDraftURI: "https://github/geonovum/IMX-LineageModel",
   //-- de namen van de Editor(s) ------------------------------------------------------
   //-- vul in: per Editor: name:, company:, companyURL: -------------------------------
   editors: 
@@ -71,12 +71,7 @@ var respecConfig =
       name:       "Paul Janssen",
       company:    "Geonovum",
       companyURL: "https://www.geonovum.nl"
-    }, 
-    {
-      name:       "Naam Editor-n",
-      company:    "Geonovum",
-      companyURL: "https://www.geonovum.nl"
-    }, 
+    }
   ],
   //-- de namen van de Author(s) ------------------------------------------------------
   //-- vul in: per Author: name:, company:, companyURL: -------------------------------
@@ -130,14 +125,14 @@ var respecConfig =
     "WAU-MAP":
     {
       title:      "WaU IMX Model Mapping",
-      href:       "https://geonovum.github.io/WaU-MAP",
+      href:       "https://geonovum.github.io/IMX-Modelmapping",
       status:     "ED",
       publisher:  "Geonovum",
   },
     "WAU-Metadata":
       {
         title:      "WaU - Metadata basic principles",
-        href:       "https://geonovum.github.io/WaU-Metadata/",
+        href:       "https://geonovum.github.io/IMX-Metadata/",
         status:     "ED",
         publisher:  "Geonovum",
     },

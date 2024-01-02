@@ -107,13 +107,13 @@ Lastly we provide insights into the transformation itself, the mapping used for 
 
 ![](media/level3.2.png)
 
-The Property mapping execustion can be deconstructed into several smaller activities as it may include multiple intermediary results; each having a query path and a startnode, which are then combined and/or transformed into the value of the orchestrated data element. The PropertyMapping is the main entity describing, in order, the steps (PropertyPathMappings) required to derive a specific data element. Each step is an activity that informs the property mapping execution; which yield the orchestrated data element. As part of the lineage information we refer to elements in the mapping to provide insights into how the orchestrated data element was constructed. This allows us to provide insight into which, and how, data elements were used to derive a new data element. Adding this to our lineage model yields the following model.
+The Property mapping execution can be deconstructed into several smaller activities as it may include multiple intermediary results; each having a query path and a startnode, which are then combined and/or transformed into the value of the orchestrated data element. The PropertyMapping is the main entity describing, in order, the steps (PropertyPathMappings) required to derive a specific data element. Each step is an activity that informs the property mapping execution; which yield the orchestrated data element. As part of the lineage information we refer to elements in the mapping to provide insights into how the orchestrated data element was constructed. This allows us to provide insight into which, and how, data elements were used to derive a new data element. Adding this to our lineage model yields the following model.
 
 | Term                    | Definition                                                                                   |
 | ----------------------- | -------------------------------------------------------------------------------------------- |
 | was informed by         | A relation between activities stating that one activity uses some output of the other activity. |
 | property path execution | A property path execution is an activity that retrieves data elements to serve as input for the property mapping execution. |
-| references              | Referemces indicates the source data element used in a property path execution. |
+| references              | References indicates the source data element used in a property path execution. |
 | start node              | Start node indicated the source object from which property paths are traversed to find source data elements. |
 
 <!-- 
