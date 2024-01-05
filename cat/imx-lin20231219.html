@@ -1,0 +1,3451 @@
+<!DOCTYPE HTML><section id="cat" class="normative">
+   <h2>Objectcatalog</h2>
+   <!--imkad-Lineage-logisch-1.0-0-20230207-20231220-090033 imvertor 3.0.0-->
+   <section id="global_packages">
+      <h3>Model   </h3>
+      <div class="imageinfo overview"><img src="cat/Images/EAID_7E46197B_2A95_408d_A0B8_70BC12EFCB24.png" usemap="#imagemap-EAID_7E46197B_2A95_408d_A0B8_70BC12EFCB24" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_7E46197B_2A95_408d_A0B8_70BC12EFCB24"><area shape="rect" alt="PathMappingExecution" coords="1095,400,1233,469" href="#global_class_Orchestration_PathMappingExecution"><area shape="rect" alt="OrchestratedRelationDataItem" coords="535,786,685,866" href="#global_class_Orchestration_OrchestratedRelationDataItem"><area shape="rect" alt="OrchestratedComplexDataItem" coords="535,676,685,756" href="#global_class_Orchestration_OrchestratedComplexDataItem"><area shape="rect" alt="OrchestratedSimpleDataItem" coords="535,575,685,655" href="#global_class_Orchestration_OrchestratedSimpleDataItem"><area shape="rect" alt="Model" coords="2195,195,2353,271" href="#global_class_Orchestration_Model"><area shape="rect" alt="PropertyMappingExecution" coords="837,400,975,469" href="#global_class_Orchestration_PropertyMappingExecution"><area shape="rect" alt="PathExecution" coords="1354,400,1492,469" href="#global_class_Orchestration_PathExecution"><area shape="rect" alt="TargetObject" coords="25,377,182,482" href="#global_class_Orchestration_TargetObject"><area shape="rect" alt="Path" coords="1336,154,1512,234" href="#global_class_IMXMappingModel_Path"><area shape="rect" alt="PathMapping" coords="1106,149,1222,229" href="#global_class_IMXMappingModel_PathMapping"><area shape="rect" alt="PropertyMapping" coords="822,150,992,230" href="#global_class_IMXMappingModel_PropertyMapping"><area shape="rect" alt="ValueType" coords="374,126,493,293" href="#global_class_Orchestration_ValueType"><area shape="rect" alt="SourceSimpleDataItem" coords="2246,514,2449,603" href="#global_class_Orchestration_SourceSimpleDataItem"><area shape="rect" alt="SourceComplexDataItem" coords="2246,634,2449,704" href="#global_class_Orchestration_SourceComplexDataItem"><area shape="rect" alt="Data Source" coords="1846,184,2054,275" href="#global_class_Orchestration_DataSource"><area shape="rect" alt="SourceRelationDataItem" coords="2246,751,2449,821" href="#global_class_Orchestration_SourceRelationDataItem"><area shape="rect" alt="SourceObject" coords="1695,875,1927,994" href="#global_class_Orchestration_SourceObject"><area shape="rect" alt="SourceDataItem" coords="1846,380,2054,498" href="#global_class_Orchestration_SourceDataItem"><area shape="rect" alt="OrchestratedDataItem" coords="295,375,537,483" href="#global_class_Orchestration_OrchestratedDataItem"></map><p><b>Lineage</b></p>
+      </div>
+   </section>
+   <section id="global_package_Orchestration">
+      <h3>Domain   Orchestration</h3>
+      <div class="imageinfo "><img src="cat/Images/EAID_7EE76A15_DD2E_43a1_8003_B8FBB0BD3C20.png" usemap="#imagemap-EAID_7EE76A15_DD2E_43a1_8003_B8FBB0BD3C20" alt="Diagram "></div>
+      <section>
+         <h4>Objecttypes   </h4>
+         
+         <section id="global_class_Orchestration_OrchestratedDataItem">
+            <h5>   Orchestrated­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Orchestrated­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>An orchestrated data item is a data item that is generated/obtained by orchestrating
+                           source data.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>True</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Orchestrated­Data­Item
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedDataItem_wasGeneratedBy">was­Generated­By: was­Generated­By</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_PropertyMappingExecution">Property­Mapping­Execution</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The activity which generated (or produced) the orchestrated data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Orchestrated­Data­Item
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedDataItem_subject">subject</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_TargetObject">Target­Object</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The subject of the data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedComplexDataItem">Orchestrated­Complex­Data­Item</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedComplexDataItem_consistsOf">consists­Of</a>
+                        
+                        Orchestrated­Data­Item
+                        [ 2 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The constituent data item of the complex data item.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_SourceDataItem">
+            <h5>   Source­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Source­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A source data item is a data item that serves as input for an orchestration activity.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>True</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Source­Data­Item
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceDataItem_dataSource">data­Source</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_DataSource">Data Source</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The data source from which the source data item can be retrieved</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Source­Data­Item
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceDataItem_subject">subject</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceObject">Source­Object</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The subject of a source data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_PathExecution">Path­Execution</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathExecution_references">references</a>
+                        
+                        Source­Data­Item
+                        [ 0 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The source data item referenced by following the defined path starting from the start
+                           node.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceComplexDataItem">Source­Complex­Data­Item</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceComplexDataItem_consistsOf">consists­Of</a>
+                        
+                        Source­Data­Item
+                        [ 2 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The constituent data item of the complex data item.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_SourceRelationDataItem">
+            <h5>   Source­Relation­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Source­Relation­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A source relation data item is a relation data item that serves as input for an orchestration
+                           activity.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Source­Relation­Data­Item
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceRelationDataItem_value">value</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceObject">Source­Object</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The value of the data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Source­Relation­Data­Item
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>A source data item is a data item that serves as input for an orchestration activity.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_SourceObject">
+            <h5>   Source­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Source­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A source object is an object that serves as input for an orchestration activity.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Unique designation</th>
+                     <td>identificatie</td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_SourceObject_type">type</a>
+                        </td>
+                     <td>
+                        
+                        <p>The type of the source object in the data source.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_SourceObject_identificatie">identificatie</a>
+                        </td>
+                     <td>
+                        
+                        <p>The identification of the source object in the data source.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceDataItem_subject">subject</a>
+                        
+                        Source­Object
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The subject of a source data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceRelationDataItem">Source­Relation­Data­Item</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceRelationDataItem_value">value</a>
+                        
+                        Source­Object
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The value of the data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_PathExecution">Path­Execution</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathExecution_startNode">start­Node: start­Node</a>
+                        
+                        Source­Object
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The source object from which the path is followed to find the referenced data item.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_DataSource">
+            <h5>   Data Source</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Data Source</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A data source is an entity which provides access to a dataset.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_DataSource_name">name</a>
+                        </td>
+                     <td>
+                        
+                        <p>The name of the data source.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Data Source
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_DataSource_conformsTo">conforms­To</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_Model">Model</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceDataItem_dataSource">data­Source</a>
+                        
+                        Data Source
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The data source from which the source data item can be retrieved</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_OrchestratedRelationDataItem">
+            <h5>   Orchestrated­Relation­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Orchestrated­Relation­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>An orchestrated relation data item is an orchestrated data item that is non-divisible
+                           and where the value is an association to an object.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Orchestrated­Relation­Data­Item
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedRelationDataItem_value">value</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_TargetObject">Target­Object</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Orchestrated­Relation­Data­Item
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>An orchestrated data item is a data item that is generated/obtained by orchestrating
+                           source data.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_TargetObject">
+            <h5>   Target­Object</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Target­Object</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A target object is an object which is the subject of an orchestrated data item.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Unique designation</th>
+                     <td>identificatie</td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_TargetObject_identificatie">identificatie</a>
+                        </td>
+                     <td>
+                        
+                        <p>The identification of  the target object</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_TargetObject_Domain">Domain</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedDataItem_subject">subject</a>
+                        
+                        Target­Object
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The subject of the data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedRelationDataItem">Orchestrated­Relation­Data­Item</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedRelationDataItem_value">value</a>
+                        
+                        Target­Object
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_PathExecution">
+            <h5>   Path­Execution</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Path­Execution</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A path execution is an orchestration activity that is part of the path mapping execution.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Date added</th>
+                     <td>
+                        &lt;date&gt;
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Execution
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathExecution_references">references</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                        
+                        [ 0 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The source data item referenced by following the defined path starting from the start
+                           node.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Execution
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathExecution_used">used: used</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_Path">Path</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The mapping element used in the orchestration activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Execution
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathExecution_startNode">start­Node: start­Node</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceObject">Source­Object</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The source object from which the path is followed to find the referenced data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_PathMappingExecution">Path­Mapping­Execution</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathMappingExecution_wasInformedBy">was­Informed­By</a>
+                        
+                        Path­Execution
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The source activity uses some output of the target activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Execution
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestrationActivity">Orchestration­Activity</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>An orchestration activity is an activity that is part of an IMX orchestration process.
+                           </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_SourceComplexDataItem">
+            <h5>   Source­Complex­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Source­Complex­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A source  complex data item is a complex data item that serves as input for an orchestration
+                           activity.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Source­Complex­Data­Item
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_SourceComplexDataItem_consistsOf">consists­Of</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                        
+                        [ 2 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The constituent data item of the complex data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Source­Complex­Data­Item
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>A source data item is a data item that serves as input for an orchestration activity.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_Model">
+            <h5>   Model</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Model</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A model is the representation of a logical data model.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Date added</th>
+                     <td>
+                        &lt;date&gt;
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_Model_name">name</a>
+                        </td>
+                     <td>
+                        
+                        <p>The name of the model.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_DataSource">Data Source</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_DataSource_conformsTo">conforms­To</a>
+                        
+                        Model
+                        [ 1 ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_SourceSimpleDataItem">
+            <h5>   Source­Simple­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Source­Simple­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A source  simple data item is a simple data item that serves as input for an orchestration
+                           activity.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_SourceSimpleDataItem_value">value</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="link" href="#global_class_Orchestration_ValueType">Value­Type</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Source­Simple­Data­Item
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>A source data item is a data item that serves as input for an orchestration activity.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_PathMappingExecution">
+            <h5>   Path­Mapping­Execution</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Path­Mapping­Execution</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A path mapping execution is an orchestration activity that is part of the propertymapping
+                           execution.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Mapping­Execution
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathMappingExecution_used">used</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The mapping element used in the orchestration activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Mapping­Execution
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathMappingExecution_wasInformedBy">was­Informed­By</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_PathExecution">Path­Execution</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The source activity uses some output of the target activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_PropertyMappingExecution">Property­Mapping­Execution</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PropertyMappingExecution_wasInformedBy">was­Informed­By</a>
+                        
+                        Path­Mapping­Execution
+                        [ 1 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The source activity uses some output of the target activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Mapping­Execution
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestrationActivity">Orchestration­Activity</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>An orchestration activity is an activity that is part of an IMX orchestration process.
+                           </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_OrchestrationActivity">
+            <h5>   Orchestration­Activity</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Orchestration­Activity</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>An orchestration activity is an activity that is part of an IMX orchestration process.
+                           </p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
+         
+         <section id="global_class_Orchestration_OrchestratedComplexDataItem">
+            <h5>   Orchestrated­Complex­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Orchestrated­Complex­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>An orchestrated complex data item is an orchestrated data item consisting of two or
+                           more other orchestrated data items.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Orchestrated­Complex­Data­Item
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedComplexDataItem_consistsOf">consists­Of</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a>
+                        
+                        [ 2 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The constituent data item of the complex data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Orchestrated­Complex­Data­Item
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>An orchestrated data item is a data item that is generated/obtained by orchestrating
+                           source data.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_PropertyMappingExecution">
+            <h5>   Property­Mapping­Execution</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Property­Mapping­Execution</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A Property mapping execution is an orchestration activity that pertains to the execution
+                           of a property mapping.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Date added</th>
+                     <td>
+                        &lt;date&gt;
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Property­Mapping­Execution
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PropertyMappingExecution_wasInformedBy">was­Informed­By</a>
+                        
+                        
+                        <a class="link" href="#global_class_Orchestration_PathMappingExecution">Path­Mapping­Execution</a>
+                        
+                        [ 1 .. * ]
+                        </td>
+                     <td>
+                        
+                        <p>The source activity uses some output of the target activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Property­Mapping­Execution
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PropertyMappingExecution_used">used: used</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_PropertyMapping">Property­Mapping</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The mapping element used in the orchestration activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_OrchestratedDataItem_wasGeneratedBy">was­Generated­By: was­Generated­By</a>
+                        
+                        Property­Mapping­Execution
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The activity which generated (or produced) the orchestrated data item.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Property­Mapping­Execution
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestrationActivity">Orchestration­Activity</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>An orchestration activity is an activity that is part of an IMX orchestration process.
+                           </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_Orchestration_OrchestratedSimpleDataItem">
+            <h5>   Orchestrated­Simple­Data­Item</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Orchestrated­Simple­Data­Item</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>An orchestrated simple data item is an orchestrated data item that is non-divisible
+                           and contains a literal value.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_OrchestratedSimpleDataItem_value">value</a>
+                        </td>
+                     <td>
+                        
+                        <p>The value of the data item.</p>
+                        </td>
+                     <td>
+                        <a class="link" href="#global_class_Orchestration_ValueType">Value­Type</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Orchestrated­Simple­Data­Item
+                        is specialisatie van
+                        
+                        <a class="link" href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a>
+                        
+                        </td>
+                     <td>
+                        
+                        <p>An orchestrated data item is a data item that is generated/obtained by orchestrating
+                           source data.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         </section>
+      <section>
+         <h4>Keuzen   </h4>
+         
+         <section id="global_class_Orchestration_ValueType">
+            <h5>   Value­Type</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Value­Type</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overzicht keuze elementen  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Keuze element</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_ValueType_boolean">boolean</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_ValueType_integer">integer</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_ValueType_lijn">lijn</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Curve
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_ValueType_punt">punt</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Point
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_ValueType_real">real</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Real</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_ValueType_string">string</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_Orchestration_ValueType_vlak">vlak</a>
+                        </td>
+                     <td></td>
+                     <td>
+                        GM_Surface
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            </section>
+         </section>
+      <section>
+         <h4>Attribuut- en relatiesoort details  </h4>
+         
+         <section>
+            <h5>Objecttype details  </h5>
+            
+            <section id="detail_class_Orchestration_OrchestratedDataItem">
+               <h6>   Orchestrated­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_OrchestratedDataItem_wasGeneratedBy">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a> was­Generated­By</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>was­Generated­By</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The activity which generated (or produced) the orchestrated data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_PropertyMappingExecution">Property­Mapping­Execution</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Orchestration_OrchestratedDataItem_subject">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a> subject</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>subject</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The subject of the data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_TargetObject">Target­Object</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_SourceDataItem">
+               <h6>   Source­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_SourceDataItem_dataSource">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a> data­Source</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>data­Source</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The data source from which the source data item can be retrieved</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_DataSource">Data Source</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Orchestration_SourceDataItem_subject">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a> subject</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>subject</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The subject of a source data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_SourceObject">Source­Object</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_SourceRelationDataItem">
+               <h6>   Source­Relation­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_SourceRelationDataItem_value">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_SourceRelationDataItem">Source­Relation­Data­Item</a> value</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>value</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The value of the data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_SourceObject">Source­Object</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_SourceObject">
+               <h6>   Source­Object</h6>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_SourceObject_type">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_SourceObject">Source­Object</a> type</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>type</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The type of the source object in the data source.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_SourceObject_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_SourceObject">Source­Object</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The identification of the source object in the data source.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_DataSource">
+               <h6>   Data Source</h6>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_DataSource_name">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_DataSource">Data Source</a> name</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>name</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The name of the data source.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Orchestration_DataSource_conformsTo">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_DataSource">Data Source</a> conforms­To</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>conforms­To</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_Model">Model</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_OrchestratedRelationDataItem">
+               <h6>   Orchestrated­Relation­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_OrchestratedRelationDataItem_value">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_OrchestratedRelationDataItem">Orchestrated­Relation­Data­Item</a> value</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>value</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_TargetObject">Target­Object</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_TargetObject">
+               <h6>   Target­Object</h6>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_TargetObject_identificatie">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_TargetObject">Target­Object</a> identificatie</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>identificatie</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The identification of  the target object</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_TargetObject_Domain">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_TargetObject">Target­Object</a> Domain</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>Domain</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_PathExecution">
+               <h6>   Path­Execution</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_PathExecution_references">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_PathExecution">Path­Execution</a> references</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>references</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The source data item referenced by following the defined path starting from the start
+                                 node.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Orchestration_PathExecution_used">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_PathExecution">Path­Execution</a> used</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>used</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The mapping element used in the orchestration activity.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMXMappingModel_Path">Path</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Orchestration_PathExecution_startNode">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_PathExecution">Path­Execution</a> start­Node</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>start­Node</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The source object from which the path is followed to find the referenced data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_SourceObject">Source­Object</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_SourceComplexDataItem">
+               <h6>   Source­Complex­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_SourceComplexDataItem_consistsOf">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_SourceComplexDataItem">Source­Complex­Data­Item</a> consists­Of</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>consists­Of</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The constituent data item of the complex data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>A complex data item always consists out of two or more data items, which in turn can
+                                 consists out of other data items.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>2 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_SourceDataItem">Source­Data­Item</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_Model">
+               <h6>   Model</h6>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_Model_name">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_Model">Model</a> name</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>name</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The name of the model.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_SourceSimpleDataItem">
+               <h6>   Source­Simple­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_SourceSimpleDataItem_value">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_SourceSimpleDataItem">Source­Simple­Data­Item</a> value</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>value</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="link" href="#detail_class_Orchestration_ValueType">Value­Type</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_PathMappingExecution">
+               <h6>   Path­Mapping­Execution</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_PathMappingExecution_used">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_PathMappingExecution">Path­Mapping­Execution</a> used</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>used</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The mapping element used in the orchestration activity.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Orchestration_PathMappingExecution_wasInformedBy">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_PathMappingExecution">Path­Mapping­Execution</a> was­Informed­By</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>was­Informed­By</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The source activity uses some output of the target activity.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_PathExecution">Path­Execution</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            
+            <section id="detail_class_Orchestration_OrchestratedComplexDataItem">
+               <h6>   Orchestrated­Complex­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_OrchestratedComplexDataItem_consistsOf">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_OrchestratedComplexDataItem">Orchestrated­Complex­Data­Item</a> consists­Of</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>consists­Of</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The constituent data item of the complex data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>
+                              
+                              <p>A complex data item always consists out of two or more data items, which in turn can
+                                 consists out of other data items.</p>
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>2 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_OrchestratedDataItem">Orchestrated­Data­Item</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_PropertyMappingExecution">
+               <h6>   Property­Mapping­Execution</h6>
+               
+               <div class="deepheader" id="detail_association_Orchestration_PropertyMappingExecution_wasInformedBy">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_PropertyMappingExecution">Property­Mapping­Execution</a> was­Informed­By</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>was­Informed­By</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The source activity uses some output of the target activity.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_Orchestration_PathMappingExecution">Path­Mapping­Execution</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               
+               <div class="deepheader" id="detail_association_Orchestration_PropertyMappingExecution_used">
+                  <h7>Relatiesoort details  <a href="#global_class_Orchestration_PropertyMappingExecution">Property­Mapping­Execution</a> used</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>used</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The mapping element used in the orchestration activity.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMXMappingModel_PropertyMapping">Property­Mapping</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_Orchestration_OrchestratedSimpleDataItem">
+               <h6>   Orchestrated­Simple­Data­Item</h6>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_OrchestratedSimpleDataItem_value">
+                  <h7>Attribuutsoort details  <a href="#global_class_Orchestration_OrchestratedSimpleDataItem">Orchestrated­Simple­Data­Item</a> value</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>value</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The value of the data item.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="link" href="#detail_class_Orchestration_ValueType">Value­Type</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         <section>
+            <h5>Keuze  </h5>
+            
+            <section id="detail_class_Orchestration_ValueType">
+               <h6>Keuze   Value­Type</h6>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_ValueType_boolean">
+                  <h7>Keuze element  <a href="#global_class_Orchestration_ValueType">Value­Type</a> boolean</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>boolean</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Boolean</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_ValueType_integer">
+                  <h7>Keuze element  <a href="#global_class_Orchestration_ValueType">Value­Type</a> integer</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>integer</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_ValueType_lijn">
+                  <h7>Keuze element  <a href="#global_class_Orchestration_ValueType">Value­Type</a> lijn</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>lijn</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              GM_Curve
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_ValueType_punt">
+                  <h7>Keuze element  <a href="#global_class_Orchestration_ValueType">Value­Type</a> punt</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>punt</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              GM_Point
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_ValueType_real">
+                  <h7>Keuze element  <a href="#global_class_Orchestration_ValueType">Value­Type</a> real</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>real</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Real</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_ValueType_string">
+                  <h7>Keuze element  <a href="#global_class_Orchestration_ValueType">Value­Type</a> string</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>string</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_attribute_Orchestration_ValueType_vlak">
+                  <h7>Keuze element  <a href="#global_class_Orchestration_ValueType">Value­Type</a> vlak</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>vlak</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              GM_Surface
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         
+         
+         </section>
+   </section>
+   <section id="global_package_IMXMappingModel">
+      <h3>View   IMX Mapping model</h3>
+      <div class="imageinfo overview"><img src="cat/Images/EAID_8BFCEF7C_9BE0_4859_98A5_D431E4412A55.png" usemap="#imagemap-EAID_8BFCEF7C_9BE0_4859_98A5_D431E4412A55" alt="Diagram &#xA;                        &#xA;                     "><map name="imagemap-EAID_8BFCEF7C_9BE0_4859_98A5_D431E4412A55"><area shape="rect" alt="PathMapping" coords="45,208,161,288" href="#global_class_IMXMappingModel_PathMapping"><area shape="rect" alt="Path" coords="25,395,181,475" href="#global_class_IMXMappingModel_Path"><area shape="rect" alt="PropertyMapping" coords="29,35,180,115" href="#global_class_IMXMappingModel_PropertyMapping"></map><p><b>Mapping</b></p>
+      </div>
+      <section>
+         <h4>Objecttypes   </h4>
+         
+         <section id="global_class_IMXMappingModel_PathMapping">
+            <h5>   Path­Mapping</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Path­Mapping</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A path mapping is a set of declarations which express references to data items of
+                           data objects of source data sources and actions on those.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMXMappingModel_PathMapping_name">name</a>
+                        </td>
+                     <td>
+                        
+                        <p>The name of the path mapping.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Mapping
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_IMXMappingModel_PathMapping_path">path: path</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_Path">Path</a>
+                        
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        Path­Mapping
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_IMXMappingModel_PathMapping_nextPathMapping">next­Path­Mapping</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a>
+                        
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The subsequent path mapping to be executed as part of a property mapping.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_PathMappingExecution">Path­Mapping­Execution</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathMappingExecution_used">used</a>
+                        
+                        Path­Mapping
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The mapping element used in the orchestration activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_PropertyMapping">Property­Mapping</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_IMXMappingModel_PropertyMapping_pathMapping">path­Mapping: path­Mapping</a>
+                        
+                        Path­Mapping
+                        [ 1 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_IMXMappingModel_Path">
+            <h5>   Path</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Path</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A path, or path expression, is a set of declarations which, conceptually, represent
+                           a possible route through a graph of data items. A path is comprised of an ordered,
+                           non-unique sequence of segments. Each segment represents a step in that route.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMXMappingModel_Path_segment">segment</a>
+                        </td>
+                     <td>
+                        
+                        <p>A segment is a string that represents a property reference.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1 .. *</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_PathExecution">Path­Execution</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PathExecution_used">used: used</a>
+                        
+                        Path
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The mapping element used in the orchestration activity.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a>
+                        
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_IMXMappingModel_PathMapping_path">path: path</a>
+                        
+                        Path
+                        [ 0 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         
+         <section id="global_class_IMXMappingModel_PropertyMapping">
+            <h5>   Property­Mapping</h5>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Name</th>
+                     <td>Property­Mapping</td>
+                  </tr>
+                  <tr>
+                     <th>Definition</th>
+                     <td>
+                        
+                        
+                        <p>A property mapping is a set of declarations which express the mapping of a target
+                           object type property within an object type mapping.</p>
+                        
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Is abstract</th>
+                     <td>False</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            <h6>Overview attributes  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <colgroup style="width: 10%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Format</th>
+                     <th>Card</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        <a class="link" href="#detail_attribute_IMXMappingModel_PropertyMapping_propertyName">property­Name</a>
+                        </td>
+                     <td>
+                        
+                        <p>The name of the property in the target model which is the target of this property
+                           mapping.</p>
+                        </td>
+                     <td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                        </td>
+                     <td>1</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            <h6>Overview relations  </h6>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 50%;"></colgroup>
+               <colgroup style="width: 50%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Relation name with multiplicity</th>
+                     <th>Definition</th>
+                  </tr>
+                  <tr>
+                     <td>
+                        Property­Mapping
+                        [ 1 ]
+                        
+                        <a class="link" href="#detail_association_IMXMappingModel_PropertyMapping_pathMapping">path­Mapping: path­Mapping</a>
+                        
+                        
+                        <a class="link" href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a>
+                        
+                        [ 1 .. * ]
+                        </td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>
+                        
+                        <a class="link" href="#global_class_Orchestration_PropertyMappingExecution">Property­Mapping­Execution</a>
+                        
+                        [ 0 .. * ]
+                        
+                        <a class="link" href="#detail_association_Orchestration_PropertyMappingExecution_used">used: used</a>
+                        
+                        Property­Mapping
+                        [ 1 ]
+                        </td>
+                     <td>
+                        
+                        <p>The mapping element used in the orchestration activity.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+            
+            </section>
+         </section>
+      <section>
+         <h4>Attribuut- en relatiesoort details  </h4>
+         
+         <section>
+            <h5>Objecttype details  </h5>
+            
+            <section id="detail_class_IMXMappingModel_PathMapping">
+               <h6>   Path­Mapping</h6>
+               
+               <div class="deepheader" id="detail_attribute_IMXMappingModel_PathMapping_name">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a> name</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>name</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The name of the path mapping.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_IMXMappingModel_PathMapping_path">
+                  <h7>Relatiesoort details  <a href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a> path</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>path</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>0 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMXMappingModel_Path">Path</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               
+               <div class="deepheader" id="detail_association_IMXMappingModel_PathMapping_nextPathMapping">
+                  <h7>Relatiesoort details  <a href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a> next­Path­Mapping</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>next­Path­Mapping</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The subsequent path mapping to be executed as part of a property mapping.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            
+            <section id="detail_class_IMXMappingModel_Path">
+               <h6>   Path</h6>
+               
+               <div class="deepheader" id="detail_attribute_IMXMappingModel_Path_segment">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMXMappingModel_Path">Path</a> segment</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>segment</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>A segment is a string that represents a property reference.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </section>
+            
+            <section id="detail_class_IMXMappingModel_PropertyMapping">
+               <h6>   Property­Mapping</h6>
+               
+               <div class="deepheader" id="detail_attribute_IMXMappingModel_PropertyMapping_propertyName">
+                  <h7>Attribuutsoort details  <a href="#global_class_IMXMappingModel_PropertyMapping">Property­Mapping</a> property­Name</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>property­Name</td>
+                        </tr>
+                        <tr>
+                           <th>Definition</th>
+                           <td>
+                              
+                              
+                              <p>The name of the property in the target model which is the target of this property
+                                 mapping.</p>
+                              
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Toelichting</th>
+                           <td>Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <th>Patroon</th>
+                           <td>
+                              De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel
+                              het waardenbereik, uitgedrukt in een specifieke structuur.
+                              </td>
+                        </tr>
+                        <tr>
+                           <th>Format</th>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               
+               <div class="deepheader" id="detail_association_IMXMappingModel_PropertyMapping_pathMapping">
+                  <h7>Relatiesoort details  <a href="#global_class_IMXMappingModel_PropertyMapping">Property­Mapping</a> path­Mapping</h7>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 70%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Name</th>
+                           <td>path­Mapping</td>
+                        </tr>
+                        <tr>
+                           <th>Nillable</th>
+                           <td>False</td>
+                        </tr>
+                        <tr>
+                           <th>Multiplicity</th>
+                           <td>1 .. *</td>
+                        </tr>
+                        <tr>
+                           <th>Related objecttype</th>
+                           <td>
+                              <a class="link" href="#global_class_IMXMappingModel_PathMapping">Path­Mapping</a>
+                              </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </section>
+            </section>
+         
+         
+         
+         
+         
+         
+         
+         
+         </section>
+   </section>
+</section>

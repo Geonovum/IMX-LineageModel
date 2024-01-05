@@ -1,4 +1,3 @@
-## Lineage - Information model
 
 
 **_NOTE:_**  The information model is work in progress

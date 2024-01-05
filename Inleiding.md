@@ -4,7 +4,7 @@ Kadaster and Geonovum are developing a mechanism to facilitate the semantic inte
 
 Data retrieval is according to the information model of the semantic layer. Data retrieval will optionally include metadata about the lineage (provenance) of the data.
 
-This document specifies the lineage model used and the mechanism introduced in [[WAU-Metadata]] to relate the lineage data as metadata to published data.
+This document specifies the lineage model used and the mechanism introduced in [[IMX-Metadata]] to relate the lineage data as metadata to published data.
 
 ### Scope
 
