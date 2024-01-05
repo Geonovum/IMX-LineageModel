@@ -1,5 +1,5 @@
 ## Requirements and approach
-Within this chapter two sections are presented; Requirements and Approach. In the Requirements section the requirements for the information model are listed. In the Approach section the requirements are translated into a conceptual model which forms the basis for the logical model described in [chapter 3](#objectcatalog).
+Within this chapter two sections are presented; Requirements and Approach. In the Requirements section the requirements for the information model are listed. In the Approach section the requirements are translated into a conceptual model which forms the basis for the logical model described in [chapter 4](#objectcatalog).
 
 ### Requirements
 
