@@ -21,13 +21,13 @@ let respecConfig = {
   //specType: "BP",                 // Best Practice
   //-- pubDomain is verplicht! (komt in de URL) -------------------------------------
   //-- zie: https://geonovum.github.io/handleiding-tooling/ReSpec/#pubdomain
-  pubDomain: "imx",
+  pubDomain: "IMX",
   //-- license: voor de geldende gebruiksvoorwaarden. Default is cc-by.
   //licence: "cc-by-nd",            // bronvermelding, geen afgeleide werken (default)
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "lin",
+  shortName: "Lineage-Model",
   
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
 	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
