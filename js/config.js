@@ -27,7 +27,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by",                 // Attribution, met bronvermelding
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "Lineage-Model",
+  shortName: "LineageModel",
   
   //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
 	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
@@ -68,6 +68,10 @@ let respecConfig = {
   ], 
   //neem hier de URL van de github repository op waar het respec document in staat
   github: "https://github.com/Geonovum/IMX-LineageModel",
+  //-- Repositorynaam/issues op GitHub ------------------------------------------------
+  issueBase: "https://github.com/geonovum/IMX-LineageModel/issues",
+  //-- edDraftURI: de URI van de werkversie van het document
+  edDraftURI: "https://geonovum.github.io/IMX-LineageModel",
   // Create PDF and link to file in header (optional):
   // TODO: Change the filename as preferred.
   alternateFormats: [
